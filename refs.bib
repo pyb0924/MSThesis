@@ -1,196 +1,829 @@
-@book{Yu2001,
-  author    = {余敏},
-  title     = {出版集团研究},
-  publisher = {中国书籍出版社},
-  address   = {北京},
-  year      = {2001},
-  pages     = {179--193}
+@article{baldaRayContributionMasks2012,
+  title = {Ray {{Contribution Masks}} for {{Structure Adaptive Sinogram Filtering}}},
+  author = {Balda, Michael and Hornegger, Joachim and Heismann, Bjoern},
+  date = {2012-06},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  volume = {31},
+  number = {6},
+  pages = {1228--1239},
+  issn = {1558-254X},
+  doi = {10.1109/TMI.2012.2187213},
+  abstract = {The patient dose in computed tomography (CT) imaging is linked to measurement noise. Various noise-reduction techniques have been developed that adapt structure preserving filters like anisotropic diffusion or bilateral filters to CT noise properties. We introduce a structure adaptive sinogram (SAS) filter that incorporates the specific properties of the CT measurement process. It uses a point-based forward projector to generate a local structure representation called ray contribution mask (RCM). The similarities between neighboring RCMs are used in an enhanced variant of the bilateral filtering concept, where the photometric similarity is replaced with the structural similarity. We evaluate the performance in four different scenarios: The robustness against reconstruction artifacts is demonstrated by a scan of a high-resolution-phantom. Without changing the modulation transfer function (MTF) nor introducing artifacts, the SAS filter reduces the noise level by 13.6\%. The image sharpness and noise reduction capabilities are visually assessed on in vivo patient scans and quantitatively evaluated on a simulated phantom. Unlike a standard bilateral filter, the SAS filter preserves edge information and high-frequency components of organ textures well. It shows a homogeneous noise reduction behavior throughout the whole frequency range. The last scenario uses a simulated edge phantom to estimate the filter MTF for various contrasts: the noise reduction for the simple edge phantom exceeds 80\%. For low contrasts at 55 Hounsfield units (HU), the mid-frequency range is slightly attenuated, at higher contrasts of approximately 100 HU and above, the MTF is fully preserved.},
+  eventtitle = {{{IEEE Transactions}} on {{Medical Imaging}}}
 }
 
-@inbook{Cheng1999,
-  author    = {程根伟},
-  title     = {1998年长江洪水的成因与减灾对策},
-  booktitle = {长江流域洪涝灾害与科技对策},
-  editor    = {许厚泽 and 赵其国},
-  publisher = {科学出版社},
-  address   = {北京},
-  year      = {1999},
-  pages     = {32--36}
+@article{candesStableSignalRecovery2006,
+  title = {Stable Signal Recovery from Incomplete and Inaccurate Measurements},
+  author = {Candès, Emmanuel J. and Romberg, Justin K. and Tao, Terence},
+  date = {2006},
+  journaltitle = {Communications on Pure and Applied Mathematics},
+  volume = {59},
+  number = {8},
+  pages = {1207--1223},
+  issn = {1097-0312},
+  doi = {10.1002/cpa.20124},
+  abstract = {Suppose we wish to recover a vector x0 ∈ ℝ𝓂 (e.g., a digital signal or image) from incomplete and contaminated observations y = A x0 + e; A is an 𝓃 × 𝓂 matrix with far fewer rows than columns (𝓃 ≪ 𝓂) and e is an error term. Is it possible to recover x0 accurately based on the data y? To recover x0, we consider the solution x\# to the 𝓁1-regularization problem \{\textbackslash rm \textbackslash min\textbackslash; |x\textbackslash |\_\textbackslash ell\_1 \textbackslash quad \textbackslash rm subject \textbackslash; to \textbackslash; \textbackslash |Ax-y\textbackslash |\_\textbackslash ell\_2 \textbackslash leq \textbackslash epsilon,\textbackslash{} where ϵ is the size of the error term e. We show that if A obeys a uniform uncertainty principle (with unit-normed columns) and if the vector x0 is sufficiently sparse, then the solution is within the noise level \textbackslash |x\textasciicircum\textbackslash sharp - x\_0\textbackslash |\_\textbackslash ell\_2 \textbackslash leq C \textbackslash cdot \textbackslash epsilon.\textbackslash{} As a first example, suppose that A is a Gaussian random matrix; then stable recovery occurs for almost all such A's provided that the number of nonzeros of x0 is of about the same order as the number of observations. As a second instance, suppose one observes few Fourier samples of x0; then stable recovery occurs for almost any set of 𝓃 coefficients provided that the number of nonzeros is of the order of 𝓃/(log 𝓂)6. In the case where the error term vanishes, the recovery is of course exact, and this work actually provides novel insights into the exact recovery phenomenon discussed in earlier papers. The methodology also explains why one can also very nearly recover approximately sparse signals. © 2006 Wiley Periodicals, Inc.\vphantom\}},
+  language = {en}
 }
 
-@periodical{LSC1957,
-  author    = {中国图书馆学会},
-  title     = {图书馆学通讯},
-  publisher = {北京图书馆},
-  address   = {北京},
-  year      = {1957/1990},
-  number    = {1-4}
+@article{chengLearnedFullSamplingReconstruction2020a,
+  title = {Learned {{Full-Sampling Reconstruction From Incomplete Data}}},
+  author = {Cheng, Weilin and Wang, Yu and Li, Hongwei and Duan, Yuping},
+  date = {2020},
+  journaltitle = {IEEE Transactions on Computational Imaging},
+  volume = {6},
+  pages = {945--957},
+  issn = {2333-9403},
+  doi = {10.1109/TCI.2020.2996751},
+  abstract = {Sparse-view and limited-angle Computed Tomography (CT) are very challenging problems in real applications. Due to the high ill-posedness, both analytical and iterative reconstruction methods may present distortions and artifacts for such incomplete data problems. In this work, we propose a novel reconstruction model to jointly reconstruct a high-quality image and its corresponding high-resolution projection data. The model is built up by deploying regularization on both CT image and projection data, as well as by introducing a novel full-sampling condition to fuse information from both domains. Inspired by the success of deep learning methods in imaging, we utilize the convolutional neural networks to embed and learn both the interrelationship between raw data and reconstructed images and prior information such as regularization, which is implemented in an end-to-end training process. Numerical results demonstrate that the proposed approach outperforms both variational and popular learning-based reconstruction methods for the sparse-view and limited-angle CT problems.},
+  eventtitle = {{{IEEE Transactions}} on {{Computational Imaging}}}
 }
 
-@article{Li1999,
-  author  = {李晓东 and 张庆红 and 叶瑾琳},
-  title   = {气候学研究的若干理论问题},
-  journal = {北京大学学报: 自然科学版},
-  year    = {1999},
-  volume  = {35},
-  number  = {1},
-  pages   = {101--106}
+@article{chenImprovingAbdomenTumor2013,
+  title = {Improving Abdomen Tumor Low-Dose {{CT}} Images Using a Fast Dictionary Learning Based Processing},
+  author = {Chen, Yang and Yin, Xindao and Shi, Luyao and Shu, Huazhong and Luo, Limin and Coatrieux, Jean-Louis and Toumoulin, Christine},
+  date = {2013-08},
+  journaltitle = {Physics in Medicine \& Biology},
+  shortjournal = {Phys. Med. Biol.},
+  volume = {58},
+  number = {16},
+  pages = {5803},
+  publisher = {IOP Publishing},
+  issn = {0031-9155},
+  doi = {10.1088/0031-9155/58/16/5803},
+  abstract = {In abdomen computed tomography (CT), repeated radiation exposures are often inevitable for cancer patients who receive surgery or radiotherapy guided by CT images. Low-dose scans should thus be considered in order to avoid the harm of accumulative x-ray radiation. This work is aimed at improving abdomen tumor CT images from low-dose scans by using a fast dictionary learning (DL) based processing. Stemming from sparse representation theory, the proposed patch-based DL approach allows effective suppression of both mottled noise and streak artifacts. The experiments carried out on clinical data show that the proposed method brings encouraging improvements in abdomen low-dose CT images with tumors.},
+  language = {en}
 }
 
-@patent{Jiang1989,
-  author = {姜锡洲},
-  title  = {一种温热外敷药制备方案},
-  number = {中国, 88105607.3},
-  date   = {1989-07-26}
+@inproceedings{chenImprovingLowdoseXray2010,
+  title = {Improving Low-Dose {{X-ray CT}} Images by {{Weighted Intensity Averaging}} over {{Large-scale Neighborhoods}}},
+  booktitle = {2010 3rd {{International Congress}} on {{Image}} and {{Signal Processing}}},
+  author = {Chen, Yang and Bao, Xudong and Yin, Xindao and Luo, Limin and Chen, Wufan},
+  date = {2010-10},
+  volume = {2},
+  pages = {727--729},
+  doi = {10.1109/CISP.2010.5646789},
+  abstract = {How to reduce the radiation dose delivered to the patients is always an important concern since the introduction of computed tomography (CT). With respect to patients' care, the least possible radiation dose is demanded. Though clinically desired, low-dose CT (LDCT) images tend to be severely degraded by quantum noise and artifacts under low dose scan protocols. This paper proposes to improve the LDCT images by Weighted Intensity Averaging over Large-scale Neighborhoods (WIA-LN). In the implementation of the proposed WIA-LN method, the processed pixel intensities are from a selective weighted intensity averaging of the pixels belonging to different organs or attenuation tissues within large-scale neighborhoods. Effective suppression of noise and artifacts in LDCT images without obvious loss of fine anatomic features are realized. In experiment, CT images of different doses from a Siemens CT with 16 detector rows are used. Results validate an excellent performance of the proposed approach in improving clinical LDCT images.},
+  eventtitle = {2010 3rd {{International Congress}} on {{Image}} and {{Signal Processing}}}
 }
 
-@online{Hopkinson1999,
-  author  = {Hopkinson, A.},
-  title   = {{UNIMARC} and metadata: Dublin core},
-  url     = {http://www.ifla.org/IV/ifla64/138-161e.htm},
-  urldate = {1999-12-08}
+@article{chenLowDoseCTResidual2017,
+  title = {Low-{{Dose CT With}} a {{Residual Encoder-Decoder Convolutional Neural Network}}},
+  author = {Chen, Hu and Zhang, Yi and Kalra, Mannudeep K. and Lin, Feng and Chen, Yang and Liao, Peixi and Zhou, Jiliu and Wang, Ge},
+  date = {2017-12},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  volume = {36},
+  number = {12},
+  pages = {2524--2535},
+  issn = {1558-254X},
+  doi = {10.1109/TMI.2017.2715284},
+  abstract = {Given the potential risk of X-ray radiation to the patient, low-dose CT has attracted a considerable interest in the medical imaging field. Currently, the main stream low-dose CT methods include vendor-specific sinogram domain filtration and iterative reconstruction algorithms, but they need to access raw data, whose formats are not transparent to most users. Due to the difficulty of modeling the statistical characteristics in the image domain, the existing methods for directly processing reconstructed images cannot eliminate image noise very well while keeping structural details. Inspired by the idea of deep learning, here we combine the autoencoder, deconvolution network, and shortcut connections into the residual encoder-decoder convolutional neural network (RED-CNN) for low-dose CT imaging. After patch-based training, the proposed RED-CNN achieves a competitive performance relative to the-state-of-art methods in both simulated and clinical cases. Especially, our method has been favorably evaluated in terms of noise suppression, structural preservation, and lesion detection.},
+  eventtitle = {{{IEEE Transactions}} on {{Medical Imaging}}},
+  language = {en-US}
 }
 
-@book{Jiang1998,
-  author    = {蒋有绪 and 郭泉水 and 马娟 and others},
-  title     = {中国森林群落分类及其群落学特征},
-  publisher = {科学出版社},
-  address   = {北京},
-  year      = {1998},
-  pages     = {11--12}
+@article{chenPriorImageConstrained2008,
+  title = {Prior Image Constrained Compressed Sensing ({{PICCS}}): {{A}} Method to Accurately Reconstruct Dynamic {{CT}} Images from Highly Undersampled Projection Data Sets},
+  shorttitle = {Prior Image Constrained Compressed Sensing ({{PICCS}})},
+  author = {Chen, Guang-Hong and Tang, Jie and Leng, Shuai},
+  date = {2008},
+  journaltitle = {Medical Physics},
+  volume = {35},
+  number = {2},
+  pages = {660--663},
+  issn = {2473-4209},
+  doi = {10.1118/1.2836423},
+  abstract = {When the number of projections does not satisfy the Shannon/Nyquist sampling requirement, streaking artifacts are inevitable in x-ray computed tomography (CT) images reconstructed using filtered backprojection algorithms. In this letter, the spatial-temporal correlations in dynamic CT imaging have been exploited to sparsify dynamic CT image sequences and the newly proposed compressed sensing (CS) reconstruction method is applied to reconstruct the target image sequences. A prior image reconstructed from the union of interleaved dynamical data sets is utilized to constrain the CS image reconstruction for the individual time frames. This method is referred to as prior image constrained compressed sensing (PICCS). In vivo experimental animal studies were conducted to validate the PICCS algorithm, and the results indicate that PICCS enables accurate reconstruction of dynamic CT images using about 20 view angles, which corresponds to an undersampling factor of 32. This undersampling factor implies a potential radiation dose reduction by a factor of 32 in myocardial CT perfusion imaging.},
+  language = {en},
+  keywords = {cardiology,communication satellites,compressed sensing,Computed tomography,computerised tomography,Data sets,dynamic CT,haemorheology,Heart,image reconstruction,Image reconstruction,image sequences,Medical image artifacts,Medical image contrast,medical image processing,Medical image reconstruction,Medical imaging,Medical X-ray imaging,Reconstruction,Sampling theory,Telecommunications: signal transmission and processing}
 }
 
-@proceedings{CSTAM1990,
-  editor    = {中国力学学会},
-  title     = {第 3 届全国实验流体力学学术会议论文集},
-  publisher = {天津大学出版社},
-  address   = {天津},
-  year      = {1990},
-  pages     = {20--24}
+@online{chungEmpiricalEvaluationGated2014,
+  title = {Empirical {{Evaluation}} of {{Gated Recurrent Neural Networks}} on {{Sequence Modeling}}},
+  author = {Chung, Junyoung and Gulcehre, Caglar and Cho, KyungHyun and Bengio, Yoshua},
+  date = {2014-12-11},
+  eprint = {1412.3555},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.1412.3555},
+  abstract = {In this paper we compare different types of recurrent units in recurrent neural networks (RNNs). Especially, we focus on more sophisticated units that implement a gating mechanism, such as a long short-term memory (LSTM) unit and a recently proposed gated recurrent unit (GRU). We evaluate these recurrent units on the tasks of polyphonic music modeling and speech signal modeling. Our experiments revealed that these advanced recurrent units are indeed better than more traditional recurrent units such as tanh units. Also, we found GRU to be comparable to LSTM.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing}
 }
 
-@report{WHO1970,
-  author      = {{World Health Organization}},
-  title       = {Factors regulating the immune response: report of {WHO} Scientific Group},
-  institution = {WHO},
-  location    = {Geneva},
-  year        = {1970}
+@article{demanMetalStreakArtifacts1999,
+  title = {Metal Streak Artifacts in {{X-ray}} Computed Tomography: A Simulation Study},
+  shorttitle = {Metal Streak Artifacts in {{X-ray}} Computed Tomography},
+  author = {De Man, B. and Nuyts, J. and Dupont, P. and Marchal, G. and Suetens, P.},
+  date = {1999-06},
+  journaltitle = {IEEE Transactions on Nuclear Science},
+  volume = {46},
+  number = {3},
+  pages = {691--696},
+  issn = {1558-1578},
+  doi = {10.1109/23.775600},
+  abstract = {Metal streak artifacts are an important problem in X-ray computed tomography. A high-resolution 2D fan-beam computed tomography simulator is presented. Several potential causes of metal streak artifacts are studied using phantom measurements and simulations. Beam hardening, scatter, noise and exponential edge-gradient effects are identified as important causes of metal streak artifacts. Furthermore, aliasing effects and object motion can be also responsible for certain metal streak artifacts.},
+  eventtitle = {{{IEEE Transactions}} on {{Nuclear Science}}}
 }
 
-@phdthesis{Zhang1998,
-  author      = {张志祥},
-  title       = {间断动力系统的随机扰动及其在守恒律方程中的应用},
-  institution = {北京大学数学学院},
-  address     = {北京},
-  year        = {1998},
-  pages       = {50--55}
+@article{donohoCompressedSensing2006,
+  title = {Compressed Sensing},
+  author = {Donoho, D. L.},
+  date = {2006},
+  journaltitle = {IEEE Transactions on Information Theory},
+  volume = {52},
+  number = {4},
+  pages = {1289--1306}
 }
 
-@patent{HBLZ2001,
-  author  = {河北绿洲生态环境科技有限公司},
-  title   = {一种荒漠化地区生态植被综合培育种植方法},
-  date    = {2001-10-24},
-  number  = {中国, 01129210.5},
-  url     = {http://211.152.9.47/sipoasp/zlijs/hyjs-yx-new.asp?recid=01129210.5&leixin},
-  urldate = {2002-05-28}
+@inproceedings{fengPreliminaryStudyProjection2020a,
+  title = {A {{Preliminary Study}} on {{Projection Denoising}} for {{Low-dose CT Imaging Using Modified Dual-Domain U-net}}},
+  booktitle = {2020 3rd {{International Conference}} on {{Artificial Intelligence}} and {{Big Data}} ({{ICAIBD}})},
+  author = {Feng, Zhiwei and Li, Ziheng and Cai, Ailong and Li, Lei and Yan, Bin and Tong, Li},
+  date = {2020-05},
+  pages = {223--226},
+  doi = {10.1109/ICAIBD49809.2020.9137456},
+  abstract = {Recently, low-dose computed tomography (CT) was considered by many researchers to be a good solution to reduce radiation risks of patients. However, lowering X-ray tube current will make reconstructed images quality be significantly degraded. To improve image quality, in this paper, we proposed a modified dual-domain U-net (MDD-U-net) that combines the projection domain and image domain losses. The proposed MDD-U-net can effectively suppress the projection domain noise and reduce the error in reconstructed images. The simulation experiment results showed that the proposed method effectively reduce the noise in the low-dose CT images while preserved images details information.},
+  eventtitle = {2020 3rd {{International Conference}} on {{Artificial Intelligence}} and {{Big Data}} ({{ICAIBD}})},
+  language = {en-US}
 }
 
-@standard{GBT2659,
-  author     = {国家标准局信息分类编码研究所},
-  title      = {GB/T 2659-1986 世界各国和地区名称代码},
-  bookauthor = {全国文献工作标准化技术委员会},
-  booktitle  = {文献工作国家标准汇编: 3},
-  publisher  = {中国标准出版社},
-  address    = {北京},
-  year       = {1988},
-  pages      = {59--92}
+@inproceedings{gjestebyDeepLearningMethods2017,
+  title = {Deep Learning Methods for {{CT}} Image-Domain Metal Artifact Reduction},
+  booktitle = {Developments in {{X-Ray Tomography XI}}},
+  author = {Gjesteby, Lars and Yang, Qingsong and Xi, Yan and Shan, Hongming and Claus, Bernhard and Jin, Yannan and Man, Bruno De and Wang, Ge},
+  date = {2017-09-25},
+  volume = {10391},
+  pages = {147--152},
+  publisher = {SPIE},
+  doi = {10.1117/12.2274427},
+  abstract = {Artifacts resulting from metal objects have been a persistent problem in CT images over the last four decades. A common approach to overcome their effects is to replace corrupt projection data with values synthesized from an interpolation scheme or by reprojection of a prior image. State-of-the-art correction methods, such as the interpolation- and normalization-based algorithm NMAR, often do not produce clinically satisfactory results. Residual image artifacts remain in challenging cases and even new artifacts can be introduced by the interpolation scheme. Metal artifacts continue to be a major impediment, particularly in radiation and proton therapy planning as well as orthopedic imaging. A new solution to the long-standing metal artifact reduction (MAR) problem is deep learning, which has been successfully applied to medical image processing and analysis tasks. In this study, we combine a convolutional neural network (CNN) with the state-of-the-art NMAR algorithm to reduce metal streaks in critical image regions. Training data was synthesized from CT simulation scans of a phantom derived from real patient images. The CNN is able to map metal-corrupted images to artifact-free monoenergetic images to achieve additional correction on top of NMAR for improved image quality. Our results indicate that deep learning is a novel tool to address CT reconstruction challenges, and may enable more accurate tumor volume estimation for radiation therapy planning.},
+  eventtitle = {Developments in {{X-Ray Tomography XI}}}
 }
 
-@article{Li2000,
-  author  = {李炳穆},
-  title   = {理想的图书管理员和信息专家的素养与形象},
-  journal = {图书情报工作},
-  year    = {2000},
-  number  = {2},
-  pages   = {5--8}
+@inproceedings{goodfellowGenerativeAdversarialNets2014,
+  title = {Generative {{Adversarial Nets}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+  date = {2014},
+  volume = {27},
+  publisher = {Curran Associates, Inc.},
+  url = {https://papers.nips.cc/paper/2014/hash/5ca3e9b122f61f8f06494c97b1afccf3-Abstract.html},
+  urldate = {2023-11-01},
+  abstract = {We propose a new framework for estimating generative models via adversarial nets, in which we simultaneously train two models: a generative model G that captures the data distribution, and a discriminative model D that estimates the probability that a sample came from the training data rather than G. The training procedure for G is to maximize the probability of D making a mistake. This framework corresponds to a minimax two-player game. In the space of arbitrary functions G and D, a unique solution exists, with G recovering the training data distribution and D equal to 1/2 everywhere. In the case where G and D are defined by multilayer perceptrons, the entire system can be trained with backpropagation. There is no need for any Markov chains or unrolled approximate inference networks during either training or generation of samples. Experiments demonstrate the potential of the framework through qualitative and quantitatively evaluation of the generated samples.}
 }
 
-@article{Ding2000,
-  author  = {丁文祥},
-  title   = {数字革命与竞争国际化},
-  journal = {中国青年报},
-  date    = {2000-11-20},
-  number  = {15},
-  note    = {news}
+@book{hsiehComputedTomographyPrinciples2022,
+  title = {Computed {{Tomography}}: {{Principles}}, {{Design}}, {{Artifacts}}, and {{Recent Advances}}, {{Fourth Edition}}},
+  author = {Hsieh, Jiang},
+  date = {2022}
 }
 
-@article{Jiang1999,
-  author  = {江向东},
-  title   = {互联网环境下的信息处理与图书管理系统解决方案},
-  journal = {情报学报},
-  year    = {1999},
-  volume  = {18},
-  number  = {2},
-  pages   = {4},
-  url     = {http://www.chinainfo.gov.cn/periodical/qbxb/qbxb99/qbxb990203},
-  urldate = {2000-01-18}
+@book{HuXiaoKunZhangFuJunXiaoYueYongCTJieRuZhiLiaoXue2020,
+  title = {{{CT介入治疗学}}},
+  author = {胡效坤，张福君，肖越勇},
+  date = {2020},
+  publisher = {人民卫生出版社},
+  isbn = {978-7-117-11320-5},
+  pagetotal = {1050},
+  annotation = {titleTranslation:\\
+titleTranslation:\\
+titleTranslation:\\
+titleTranslation:\\
+titleTranslation:\\
+titleTranslation:\\
+titleTranslation:\\
+titleTranslation:\\
+titleTranslation:\\
+titleTranslation:\\
+titleTranslation:\\
+titleTranslation: CT介入治疗学}
 }
 
-
-@article{Christine1998,
-  author  = {Christine, Mlot},
-  title   = {Plant physiology: plant biology in the Genome Era},
-  journal = {Science},
-  year    = {1998},
-  volume  = {281},
-  pages   = {331--332},
-  url     = {http://www.sciencemag.org/cgi/collection/anatmorp},
-  urldate = {1998-09-23}
+@inproceedings{isolaImageToImageTranslationConditional2017,
+  title = {Image-{{To-Image Translation With Conditional Adversarial Networks}}},
+  author = {Isola, Phillip and Zhu, Jun-Yan and Zhou, Tinghui and Efros, Alexei A.},
+  date = {2017},
+  pages = {1125--1134},
+  url = {https://openaccess.thecvf.com/content_cvpr_2017/html/Isola_Image-To-Image_Translation_With_CVPR_2017_paper.html},
+  urldate = {2023-02-27},
+  eventtitle = {Proceedings of the {{IEEE Conference}} on {{Computer Vision}} and {{Pattern Recognition}}}
 }
 
-@online{Xiao2001,
-  author  = {萧钰},
-  title   = {出版业信息化迈人快车道},
-  date    = {2001-12-19},
-  url     = {http://www.creader.com/news/20011219/200112190019.html},
-  urldate = {2002-04-15}
+@inproceedings{jiangReconstruction3DCT2021,
+  title = {Reconstruction of {{3D CT}} from {{A Single X-ray Projection View Using CVAE-GAN}}},
+  booktitle = {2021 {{IEEE International Conference}} on {{Medical Imaging Physics}} and {{Engineering}} ({{ICMIPE}})},
+  author = {Jiang, Ling and Zhang, Mengxi and Wei, Ran and Liu, Bo and Bai, Xiangzhi and Zhou, Fugen},
+  date = {2021-11},
+  pages = {1--6},
+  doi = {10.1109/ICMIPE53131.2021.9698875},
+  abstract = {Computed tomography can provide a 3D view of the patient's internal anatomy. However, traditional CT reconstruction methods require hundreds of X-ray projections through a full rotational scan of the body, which cannot be performed on a typical X-ray machine. In order to deal with the impact of organ movement caused by respiration in radiotherapy on the accuracy of radiotherapy, we propose to reconstruct CT from a single X-ray projection view using the conditional variational autoencoder. Conditional variational autoencoder encodes the features of a 2D X-ray projection. The decoder decodes the hidden variables encoded by the encoder and increase data dimension from 2D (X-rays) to 3D (CT) to generates a corresponding 3D CT. In addition, we use the discriminator to distinguish the generated 3D CT from the real 3D CT to make the generated 3D CT more realistic. We demonstrate the feasibility of the approach with 3D CT of two patients with lung cancer.},
+  eventtitle = {2021 {{IEEE International Conference}} on {{Medical Imaging Physics}} and {{Engineering}} ({{ICMIPE}})},
+  keywords = {Computed tomography,CT reconstruction,Decoding,GAN,Image reconstruction,Motion control,Reconstruction algorithms,Task analysis,Three-dimensional displays,VAE,X-ray projection}
 }
 
-@article{Yang1999,
-  author  = {杨瑞林 and 李力军 and 李玉成},
-  title   = {新型低合金高强韧性耐磨钢的研究},
-  journal = {钢铁},
-  year    = {1999},
-  volume  = {34},
-  number  = {7},
-  pages   = {41--45}
+@article{jinDeepConvolutionalNeural2017,
+  title = {Deep {{Convolutional Neural Network}} for {{Inverse Problems}} in {{Imaging}}},
+  author = {Jin, Kyong Hwan and McCann, Michael T. and Froustey, Emmanuel and Unser, Michael},
+  date = {2017-09},
+  journaltitle = {IEEE Transactions on Image Processing},
+  volume = {26},
+  number = {9},
+  pages = {4509--4522},
+  issn = {1941-0042},
+  doi = {10.1109/TIP.2017.2713099},
+  abstract = {In this paper, we propose a novel deep convolutional neural network (CNN)-based algorithm for solving ill-posed inverse problems. Regularized iterative algorithms have emerged as the standard approach to ill-posed inverse problems in the past few decades. These methods produce excellent results, but can be challenging to deploy in practice due to factors including the high computational cost of the forward and adjoint operators and the difficulty of hyperparameter selection. The starting point of this paper is the observation that unrolled iterative methods have the form of a CNN (filtering followed by pointwise nonlinearity) when the normal operator (H*H, where H* is the adjoint of the forward imaging operator, H) of the forward model is a convolution. Based on this observation, we propose using direct inversion followed by a CNN to solve normal-convolutional inverse problems. The direct inversion encapsulates the physical model of the system, but leads to artifacts when the problem is ill posed; the CNN combines multiresolution decomposition and residual learning in order to learn to remove these artifacts while preserving image structure. We demonstrate the performance of the proposed network in sparse-view reconstruction (down to 50 views) on parallel beam X-ray computed tomography in synthetic phantoms as well as in real experimental sinograms. The proposed network outperforms total variation-regularized iterative reconstruction for the more realistic phantoms and requires less than a second to reconstruct a 512 × 512 image on the GPU.},
+  eventtitle = {{{IEEE Transactions}} on {{Image Processing}}}
 }
 
-@article{Schinstock2000,
-  author  = {Schinstock, D. E. and Cuttino, J. F.},
-  title   = {Real time kinematic solutions of a non-contacting, three dimensional metrology frame},
-  journal = {Precision Engineering},
-  year    = {2000},
-  volume  = {24},
-  number  = {1},
-  pages   = {70--76}
+@article{kandarpaDUGRECONFrameworkDirect2021,
+  title = {{{DUG-RECON}}: {{A Framework}} for {{Direct Image Reconstruction Using Convolutional Generative Networks}}},
+  shorttitle = {{{DUG-RECON}}},
+  author = {Kandarpa, V. S. S. and Bousse, Alexandre and Benoit, Didier and Visvikis, Dimitris},
+  date = {2021-01},
+  journaltitle = {IEEE Transactions on Radiation and Plasma Medical Sciences},
+  volume = {5},
+  number = {1},
+  pages = {44--53},
+  issn = {2469-7303},
+  doi = {10.1109/TRPMS.2020.3033172},
+  abstract = {This article explores convolutional generative networks as an alternative to iterative reconstruction algorithms in medical image reconstruction. The task of medical image reconstruction involves mapping of projection domain data collected from the detector to the image domain. This mapping is done typically through iterative reconstruction algorithms which are time consuming and computationally expensive. Trained deep learning networks provide faster outputs as proven in various tasks across computer vision. In this work, we propose a direct reconstruction framework exclusively with deep learning architectures. The proposed framework consists of three segments, namely, denoising, reconstruction, and super resolution (SR). The denoising and the SR segments act as processing steps. The reconstruction segment consists of a novel double U-Net generator (DUG) which learns the sinogram-to-image transformation. This entire network was trained on positron emission tomography (PET) and computed tomography (CT) images. The reconstruction framework approximates 2-D mapping from the projection domain to the image domain. The architecture proposed in this proof-of-concept work is a novel approach to direct image reconstruction; further improvement is required to implement it in a clinical setting.},
+  eventtitle = {{{IEEE Transactions}} on {{Radiation}} and {{Plasma Medical Sciences}}}
 }
 
-@book{Wen1990,
-  author    = {温诗铸},
-  title     = {摩擦学原理},
-  publisher = {清华大学出版社},
-  address   = {北京},
-  year      = {1990},
-  pages     = {296--300}
+@article{kangDeepConvolutionalNeural2017,
+  title = {A Deep Convolutional Neural Network Using Directional Wavelets for Low-Dose {{X-ray CT}} Reconstruction},
+  author = {Kang, Eunhee and Min, Junhong and Ye, Jong Chul},
+  date = {2017},
+  journaltitle = {Medical Physics},
+  volume = {44},
+  number = {10},
+  pages = {e360-e375},
+  issn = {2473-4209},
+  doi = {10.1002/mp.12344},
+  abstract = {Purpose Due to the potential risk of inducing cancer, radiation exposure by X-ray CT devices should be reduced for routine patient scanning. However, in low-dose X-ray CT, severe artifacts typically occur due to photon starvation, beam hardening, and other causes, all of which decrease the reliability of the diagnosis. Thus, a high-quality reconstruction method from low-dose X-ray CT data has become a major research topic in the CT community. Conventional model-based de-noising approaches are, however, computationally very expensive, and image-domain de-noising approaches cannot readily remove CT-specific noise patterns. To tackle these problems, we want to develop a new low-dose X-ray CT algorithm based on a deep-learning approach. Method We propose an algorithm which uses a deep convolutional neural network (CNN) which is applied to the wavelet transform coefficients of low-dose CT images. More specifically, using a directional wavelet transform to extract the directional component of artifacts and exploit the intra- and inter- band correlations, our deep network can effectively suppress CT-specific noise. In addition, our CNN is designed with a residual learning architecture for faster network training and better performance. Results Experimental results confirm that the proposed algorithm effectively removes complex noise patterns from CT images derived from a reduced X-ray dose. In addition, we show that the wavelet-domain CNN is efficient when used to remove noise from low-dose CT compared to existing approaches. Our results were rigorously evaluated by several radiologists at the Mayo Clinic and won second place at the 2016 “Low-Dose CT Grand Challenge.” Conclusions To the best of our knowledge, this work is the first deep-learning architecture for low-dose CT reconstruction which has been rigorously evaluated and proven to be effective. In addition, the proposed algorithm, in contrast to existing model-based iterative reconstruction (MBIR) methods, has considerable potential to benefit from large data sets. Therefore, we believe that the proposed algorithm opens a new direction in the area of low-dose CT research.},
+  language = {en},
+  keywords = {convolutional neural network,deep learning,low-dose x-ray CT,wavelet transform}
 }
 
-@standard{GBT16159,
-  author    = {国家技术监督局},
-  title     = {GB/T 16159-1996 汉语拼音正词法基本规则},
-  publisher = {中国标准出版社},
-  address   = {北京},
-  year      = {1996}
+@article{katadaDevelopmentRealtimeCT1994,
+  title = {Development of real-time CT fluoroscopy},
+  author = {Katada, K. and Anno, H. and Takeshita, G. and Ogura, Y. and Koga, S. and Ida, Y. and Nonomura, K. and Kanno, T. and Ohashi, A. and Sata, S.},
+  date = {1994-10-25},
+  journaltitle = {Nihon Igaku Hoshasen Gakkai Zasshi. Nippon Acta Radiologica},
+  shortjournal = {Nihon Igaku Hoshasen Gakkai Zasshi},
+  volume = {54},
+  number = {12},
+  eprint = {9261196},
+  eprinttype = {pmid},
+  pages = {1172--1174},
+  issn = {0048-0428},
+  abstract = {A new CT system that permits real-time monitoring of CT images was developed. Phantom and volunteer studies revealed that the images were displayed at a rate of six per second with a delay time of 0.83 second with clinically sufficient resolution (256 x 256) using the newly developed fast image processor and partial-reconstruction algorithm. The clinical trial of stereotactic aspiration of intracerebral hematoma was successful. The initial trial with CT fluoroscopy revealed potential usefulness of the system in biopsy and other CT-guided interventions.},
+  language = {jpn},
+  keywords = {Biopsy Needle,Cerebral Hemorrhage,Fluoroscopy,Hematoma,Humans,Phantoms Imaging,Tomography X-Ray Computed}
 }
 
-@Comment{jabref-meta: databaseType:biblatex;}
+@article{kirchnerCTFluoroscopyassistedPuncture2002,
+  title = {{{CT Fluoroscopy-assisted Puncture}} of {{Thoracic}} and {{Abdominal Masses}}: {{A Randomized Trial}}},
+  shorttitle = {{{CT Fluoroscopy-assisted Puncture}} of {{Thoracic}} and {{Abdominal Masses}}},
+  author = {Kirchner, Johannes and Kickuth, Ralph and Laufer, Ulf and Schilling, Esther Maria and Adams, Stephan and Liermann, Dieter},
+  date = {2002-03-01},
+  journaltitle = {Clinical Radiology},
+  shortjournal = {Clinical Radiology},
+  volume = {57},
+  number = {3},
+  pages = {188--192},
+  issn = {0009-9260},
+  doi = {10.1053/crad.2001.0716},
+  abstract = {PURPOSE: We investigated the benefit of real-time guidance of interventional punctures by means of computed tomography fluoroscopy (CTF) compared with the conventional sequential acquisition guidance. MATERIAL AND METHODS: In a prospective randomized trial, 75 patients underwent either CTF-guided (group A,n=50) or sequential CT-guided (group B,n=25) punctures of thoracic (n=29) or abdominal (n=46) masses. CTF was performed on the CT machine (Somatom Plus 4 Power, Siemens Corp., Forchheim, Germany) equipped with the C.A.R.E. Vision application (tube voltage 120kV, tube current 50mA, rotational time 0.75s, slice thickness 10mm, 8 frames/s). RESULTS: The average procedure time showed a statistically significant difference between the two study groups (group A: 564s, group B 795s,P=0.0032). The mean total mAs was 7089mAs for the CTF and 4856mAs for the sequential image-guided intervention, respectively. The sensitivity was 71\% specificity 100\% positive predictive value 100\% and negative predictive value 60\% for the CTF-guided puncture, and 68, 100, 100 and 50\% for sequential CT, respectively. CONCLUSION: CTF guidance realizes a time-saving but increases the radiation exposure dosage . Kirchner, J. et al. (2002) Clinical Radiology57, 188–192},
+  keywords = {computed tomography,CT fluoroscopy,guidance,intervention,real-time imaging}
+}
+
+@inproceedings{liangImproveAngularResolution2018,
+  title = {Improve Angular Resolution for Sparse-View {{CT}} with Residual Convolutional Neural Network},
+  booktitle = {Medical {{Imaging}} 2018: {{Physics}} of {{Medical Imaging}}},
+  author = {Liang, Kaichao and Yang, Hongkai and Kang, Kejun and Xing, Yuxiang},
+  date = {2018-03-09},
+  volume = {10573},
+  pages = {382--392},
+  publisher = {SPIE},
+  doi = {10.1117/12.2293319},
+  abstract = {Sparse-view CT imaging has been a hot topic in the medical imaging field. By decreasing the number of views, dose delivered to patients can be significantly reduced. However, sparse-view CT reconstruction is an illposed problem. Serious streaking artifacts occur if reconstructed with analytical reconstruction methods. To solve this problem, many researches have been carried out to optimize in the Bayesian framework based on compressed sensing, such as applying total variation (TV) constraint. However, TV or other regularized iterative reconstruction methods are time consuming due to iterative process needed. In this work, we proposed a method of angular resolution recovery in projection domain based on deep residual convolutional neural network (CNN) so that projections at unmeasured views can be estimated accurately. We validated our method by a disjointed data set new to trained networks. With recovered projections, reconstructed images have little streaking artifacts. Details corrupted due to sparse view are recovered. This deep learning based sinogram recovery can be generalized to more data insufficient situations.},
+  eventtitle = {Medical {{Imaging}} 2018: {{Physics}} of {{Medical Imaging}}}
+}
+
+@inproceedings{liaoGenerativeMaskPyramid2019,
+  title = {Generative {{Mask Pyramid Network}} for {{CT}}/{{CBCT Metal Artifact Reduction}} with {{Joint Projection-Sinogram Correction}}},
+  booktitle = {Medical {{Image Computing}} and {{Computer Assisted Intervention}} – {{MICCAI}} 2019},
+  author = {Liao, Haofu and Lin, Wei-An and Huo, Zhimin and Vogelsang, Levon and Sehnert, William J. and Zhou, S. Kevin and Luo, Jiebo},
+  editor = {Shen, Dinggang and Liu, Tianming and Peters, Terry M. and Staib, Lawrence H. and Essert, Caroline and Zhou, Sean and Yap, Pew-Thian and Khan, Ali},
+  date = {2019},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {77--85},
+  publisher = {Springer International Publishing},
+  location = {Cham},
+  doi = {10.1007/978-3-030-32226-7_9},
+  abstract = {A conventional approach to computed tomography (CT) or cone beam CT (CBCT) metal artifact reduction is to replace the X-ray projection data within the metal trace with synthesized data. However, existing projection or sinogram completion methods cannot always produce anatomically consistent information to fill the metal trace, and thus, when the metallic implant is large, significant secondary artifacts are often introduced. In this work, we propose to replace metal artifact affected regions with anatomically consistent content through joint projection-sinogram correction as well as adversarial learning. To handle the metallic implants of diverse shapes and large sizes, we also propose a novel mask pyramid network that enforces the mask information across the network’s encoding layers and a mask fusion loss that reduces early saturation of adversarial training. Our experimental results show that the proposed projection-sinogram correction designs are effective and our method recovers information from the metal traces better than the state-of-the-art methods.},
+  isbn = {978-3-030-32226-7},
+  language = {en}
+}
+
+@inproceedings{linDudonetDualDomain2019,
+  title = {Dudonet: {{Dual Domain Network}} for {{Ct Metal Artifact Reduction}}},
+  shorttitle = {Dudonet},
+  author = {Lin, Wei-An and Liao, Haofu and Peng, Cheng and Sun, Xiaohang and Zhang, Jingdan and Luo, Jiebo and Chellappa, Rama and Zhou, Shaohua Kevin},
+  date = {2019},
+  pages = {10512--10521},
+  url = {https://openaccess.thecvf.com/content_CVPR_2019/html/Lin_DuDoNet_Dual_Domain_Network_for_CT_Metal_Artifact_Reduction_CVPR_2019_paper.html},
+  urldate = {2023-02-23},
+  eventtitle = {Proceedings of the {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}}},
+  keywords = {notion}
+}
+
+@inproceedings{liuSparsesamplingCTSinogram2020,
+  title = {Sparse-Sampling {{CT Sinogram Completion}} Using {{Generative Adversarial Networks}}},
+  booktitle = {2020 13th {{International Congress}} on {{Image}} and {{Signal Processing}}, {{BioMedical Engineering}} and {{Informatics}} ({{CISP-BMEI}})},
+  author = {Liu, Jiancong and Li, Jiangwei},
+  date = {2020-10},
+  pages = {640--644},
+  doi = {10.1109/CISP-BMEI51763.2020.9263571},
+  abstract = {Sparse-sampling for low-dose Computed tomography (CT) is currently a subject of extensive investigations due to its potential to reduce the radiation dose. However, severe streak artifacts can be observed when reconstructing the sparse-sampled data with conventional FBP algorithms. Solutions to this problem fall into two categories - interpolation methods in the sinogram domain and iterative methods for reconstruction. The former often yield results with residual streak artifacts, and the latter require ample time and computer memory. In this work, we propose to use a deep learning method to complete the sparse-sampled sinogram. The network is named Pix2Pix, which is a conditional GAN structure. Results show our approach can accurately complete sinograms with excellent generalization ability. The synthesized sinograms can thus be reconstructed by FBP without streak artifacts.},
+  eventtitle = {2020 13th {{International Congress}} on {{Image}} and {{Signal Processing}}, {{BioMedical Engineering}} and {{Informatics}} ({{CISP-BMEI}})}
+}
+
+@article{lossauneeelssLearningMetalArtifact2020,
+  title = {Learning Metal Artifact Reduction in Cardiac {{CT}} Images with Moving Pacemakers},
+  author = {Lossau (née Elss), T. and Nickisch, H. and Wissel, T. and Morlock, M. and Grass, M.},
+  date = {2020-04-01},
+  journaltitle = {Medical Image Analysis},
+  shortjournal = {Medical Image Analysis},
+  volume = {61},
+  pages = {101655},
+  issn = {1361-8415},
+  doi = {10.1016/j.media.2020.101655},
+  abstract = {Metal objects in the human heart such as implanted pacemakers frequently lead to heavy artifacts in reconstructed CT image volumes. Due to cardiac motion, common metal artifact reduction methods which assume a static object during CT acquisition are not applicable. We propose a fully automatic Dynamic Pacemaker Artifact Reduction (DyPAR+) pipeline which is built of three convolutional neural network (CNN) ensembles. In a first step, pacemaker metal shadows are segmented directly in the raw projection data by the SegmentationNets. Second, resulting metal shadow masks are passed to the InpaintingNets which replace metal-affected line integrals in the sinogram for subsequent reconstruction of a metal-free image volume. Third, the metal locations in a pre-selected motion state are predicted by the ReinsertionNets based on a stack of partial angle back-projections generated from the segmented metal shadow mask. We generate the data required for the supervised learning processes by introducing synthetic, moving pacemaker leads into 14 clinical cases without pacemakers. The SegmentationNets and the ReinsertionNets achieve average Dice coefficients of 94.16\%~±~2.01\% and 55.60\%~±~4.79\% during testing on clinical data with synthetic metal leads. With a mean absolute reconstruction error of 11.54\,HU~±~2.49 HU in the image domain, the InpaintingNets outperform the hand-crafted approaches PatchMatch and inverse distance weighting. Application of the proposed DyPAR+ pipeline to nine clinical test cases with real pacemakers leads to significant reduction of metal artifacts and demonstrates the transferability to clinical practice. Especially the SegmentationNets and InpaintingNets generalize well to unseen acquisition modes and contrast protocols.},
+  language = {en},
+  keywords = {Cardiac CT,Convolutional neural network,Metal artifact reduction}
+}
+
+@inproceedings{maoLeastSquaresGenerative2017,
+  title = {Least {{Squares Generative Adversarial Networks}}},
+  author = {Mao, Xudong and Li, Qing and Xie, Haoran and Lau, Raymond Y. K. and Wang, Zhen and Paul Smolley, Stephen},
+  date = {2017},
+  pages = {2794--2802},
+  url = {https://openaccess.thecvf.com/content_iccv_2017/html/Mao_Least_Squares_Generative_ICCV_2017_paper.html},
+  urldate = {2023-02-27},
+  eventtitle = {Proceedings of the {{IEEE International Conference}} on {{Computer Vision}}}
+}
+
+@article{meyerNormalizedMetalArtifact2010,
+  title = {Normalized Metal Artifact Reduction ({{NMAR}}) in Computed Tomography},
+  author = {Meyer, Esther and Raupach, Rainer and Lell, Michael and Schmidt, Bernhard and Kachelrieß, Marc},
+  date = {2010},
+  journaltitle = {Medical Physics},
+  volume = {37},
+  number = {10},
+  pages = {5482--5493},
+  issn = {2473-4209},
+  doi = {10.1118/1.3484090},
+  abstract = {Purpose: While modern clinical CT scanners under normal circumstances produce high quality images, severe artifacts degrade the image quality and the diagnostic value if metal prostheses or other metal objects are present in the field of measurement. Standard methods for metal artifact reduction (MAR) replace those parts of the projection data that are affected by metal (the so-called metal trace or metal shadow) by interpolation. However, while sinogram interpolation methods efficiently remove metal artifacts, new artifacts are often introduced, as interpolation cannot completely recover the information from the metal trace. The purpose of this work is to introduce a generalized normalization technique for MAR, allowing for efficient reduction of metal artifacts while adding almost no new ones. The method presented is compared to a standard MAR method, as well as MAR using simple length normalization. Methods: In the first step, metal is segmented in the image domain by thresholding. A 3D forward projection identifies the metal trace in the original projections. Before interpolation, the projections are normalized based on a 3D forward projection of a prior image. This prior image is obtained, for example, by a multithreshold segmentation of the initial image. The original rawdata are divided by the projection data of the prior image and, after interpolation, denormalized again. Simulations and measurements are performed to compare normalized metal artifact reduction (NMAR) to standard MAR with linear interpolation and MAR based on simple length normalization. Results: Promising results for clinical spiral cone-beam data are presented in this work. Included are patients with hip prostheses, dental fillings, and spine fixation, which were scanned at pitch values ranging from 0.9 to 3.2. Image quality is improved considerably, particularly for metal implants within bone structures or in their proximity. The improvements are evaluated by comparing profiles through images and sinograms for the different methods and by inspecting ROIs. NMAR outperforms both other methods in all cases. It reduces metal artifacts to a minimum, even close to metal regions. Even for patients with dental fillings, which cause most severe artifacts, satisfactory results are obtained with NMAR. In contrast to other methods, NMAR prevents the usual blurring of structures close to metal implants if the metal artifacts are moderate. Conclusions: NMAR clearly outperforms the other methods for both moderate and severe artifacts. The proposed method reliably reduces metal artifacts from simulated as well as from clinical CT data. Computationally efficient and inexpensive compared to iterative methods, NMAR can be used as an additional step in any conventional sinogram inpainting-based MAR method.},
+  language = {en},
+  keywords = {Biomaterials,bone,Computed tomography,computerised tomography,image quality,Image reconstruction,Image scanners,image segmentation,Interpolation,Medical image artifacts,medical image processing,Medical image quality,Medical image segmentation,Medical imaging,Metadata,metal artifact correction,metal artifact reduction,metal artifacts,prosthetics,Segmentation,sinogram inpainting,Tissues}
+}
+
+@inproceedings{ronnebergerUNetConvolutionalNetworks2015,
+  title = {U-{{Net}}: {{Convolutional Networks}} for {{Biomedical Image Segmentation}}},
+  shorttitle = {U-{{Net}}},
+  booktitle = {Medical {{Image Computing}} and {{Computer-Assisted Intervention}} – {{MICCAI}} 2015},
+  author = {Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+  editor = {Navab, Nassir and Hornegger, Joachim and Wells, William M. and Frangi, Alejandro F.},
+  date = {2015},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {234--241},
+  publisher = {Springer International Publishing},
+  location = {Cham},
+  doi = {10.1007/978-3-319-24574-4_28},
+  abstract = {There is large consent that successful training of deep networks requires many thousand annotated training samples. In this paper, we present a network and training strategy that relies on the strong use of data augmentation to use the available annotated samples more efficiently. The architecture consists of a contracting path to capture context and a symmetric expanding path that enables precise localization. We show that such a network can be trained end-to-end from very few images and outperforms the prior best method (a sliding-window convolutional network) on the ISBI challenge for segmentation of neuronal structures in electron microscopic stacks. Using the same network trained on transmitted light microscopy images (phase contrast and DIC) we won the ISBI cell tracking challenge 2015 in these categories by a large margin. Moreover, the network is fast. Segmentation of a 512x512 image takes less than a second on a recent GPU. The full implementation (based on Caffe) and the trained networks are available at http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net.},
+  isbn = {978-3-319-24574-4},
+  language = {en},
+  keywords = {Convolutional Layer,Data Augmentation,Deep Network,Ground Truth Segmentation,Training Image}
+}
+
+@article{rudinNonlinearTotalVariation1992,
+  title = {Nonlinear Total Variation Based Noise Removal Algorithms},
+  author = {Rudin, Leonid I. and Osher, Stanley and Fatemi, Emad},
+  date = {1992-11-01},
+  journaltitle = {Physica D: Nonlinear Phenomena},
+  shortjournal = {Physica D: Nonlinear Phenomena},
+  volume = {60},
+  number = {1},
+  pages = {259--268},
+  issn = {0167-2789},
+  doi = {10.1016/0167-2789(92)90242-F},
+  abstract = {A constrained optimization type of numerical algorithm for removing noise from images is presented. The total variation of the image is minimized subject to constraints involving the statistics of the noise. The constraints are imposed using Lanrange multipliers. The solution is obtained using the gradient-projection method. This amounts to solving a time dependent partial differential equation on a manifold determined by the constraints. As t → ∞ the solution converges to a steady state which is the denoised image. The numerical algorithm is simple and relatively fast. The results appear to be state-of-the-art for very noisy images. The method is noninvasive, yielding sharp edges in the image. The technique could be interpreted as a first step of moving each level set of the image normal to itself with velocity equal to the curvature of the level set divided by the magnitude of the gradient of the image, and a second step which projects the image back onto the constraint set.}
+}
+
+@article{sauerLocalUpdateStrategy1993,
+  title = {A Local Update Strategy for Iterative Reconstruction from Projections},
+  author = {Sauer, K. and Bouman, C.},
+  date = {1993-02},
+  journaltitle = {IEEE Transactions on Signal Processing},
+  volume = {41},
+  number = {2},
+  pages = {534--548},
+  issn = {1941-0476},
+  doi = {10.1109/78.193196},
+  abstract = {A method for Bayesian reconstruction which relies on updates of single pixel values, rather than the entire image, at each iteration is presented. The technique is similar to Gauss-Seidel (GS) iteration for the solution of differential equations on finite grids. The computational cost per iteration of the GS approach is found to be approximately equal to that of gradient methods. For continuously valued images, GS is found to have significantly better convergence at modes representing high spatial frequencies. In addition, GS is well suited to segmentation when the image is constrained to be discretely valued. It is shown that Bayesian segmentation using GS iteration produces useful estimates at much lower signal-to-noise ratios than required for continuously valued reconstruction. The convergence properties of gradient ascent and GS for reconstruction from integral projections are analyzed, and simulations of both maximum-likelihood and maximum a posteriori cases are included.{$<>$}},
+  eventtitle = {{{IEEE Transactions}} on {{Signal Processing}}}
+}
+
+@article{shenGeometryinformedDeepLearning2022,
+  title = {A Geometry-Informed Deep Learning Framework for Ultra-Sparse {{3D}} Tomographic Image Reconstruction},
+  author = {Shen, Liyue and Zhao, Wei and Capaldi, Dante and Pauly, John and Xing, Lei},
+  date = {2022-09-01},
+  journaltitle = {Computers in Biology and Medicine},
+  shortjournal = {Computers in Biology and Medicine},
+  volume = {148},
+  pages = {105710},
+  issn = {0010-4825},
+  doi = {10.1016/j.compbiomed.2022.105710},
+  abstract = {Deep learning affords enormous opportunities to augment the armamentarium of biomedical imaging. However, the pure data-driven nature of deep learning models may limit the model generalizability and application scope. Here we establish a geometry-informed deep learning framework for ultra-sparse 3D tomographic image reconstruction. We introduce a novel mechanism for integrating geometric priors of the imaging system. We demonstrate that the seamless inclusion of known priors is essential to enhance the performance of 3D volumetric computed tomography imaging with ultra-sparse sampling. The study opens new avenues for data-driven biomedical imaging and promises to provide substantially improved imaging tools for various clinical imaging and image-guided interventions.},
+  language = {en},
+  keywords = {Deep learning,Geometry-informed deep learning,Image reconstruction,notion,Sparse-view 3D image reconstruction}
+}
+
+@article{shenPatientspecificReconstructionVolumetric2019,
+  title = {Patient-Specific Reconstruction of Volumetric Computed Tomography Images from a Single Projection View via Deep Learning},
+  author = {Shen, Liyue and Zhao, Wei and Xing, Lei},
+  date = {2019-11},
+  journaltitle = {Nature Biomedical Engineering},
+  shortjournal = {Nat Biomed Eng},
+  volume = {3},
+  number = {11},
+  pages = {880--888},
+  publisher = {Nature Publishing Group},
+  issn = {2157-846X},
+  doi = {10.1038/s41551-019-0466-4},
+  abstract = {Tomographic imaging using penetrating waves generates cross-sectional views of the internal anatomy of a living subject. For artefact-free volumetric imaging, projection views from a large number of angular positions are required. Here we show that a deep-learning model trained to map projection radiographs of a patient to the corresponding 3D anatomy can subsequently generate volumetric tomographic X-ray images of the patient from a single projection view. We demonstrate the feasibility of the approach with upper-abdomen, lung, and head-and-neck computed tomography scans from three patients. Volumetric reconstruction via deep learning could be useful in image-guided interventional procedures such as radiation therapy and needle biopsy, and might help simplify the hardware of tomographic imaging systems.},
+  issue = {11},
+  language = {en},
+  keywords = {Biomedical engineering,Computed tomography,Radiotherapy,Three-dimensional imaging}
+}
+
+@online{simonyanVeryDeepConvolutional2015,
+  title = {Very {{Deep Convolutional Networks}} for {{Large-Scale Image Recognition}}},
+  author = {Simonyan, Karen and Zisserman, Andrew},
+  date = {2015-04-10},
+  eprint = {1409.1556},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.1409.1556},
+  abstract = {In this work we investigate the effect of the convolutional network depth on its accuracy in the large-scale image recognition setting. Our main contribution is a thorough evaluation of networks of increasing depth using an architecture with very small (3x3) convolution filters, which shows that a significant improvement on the prior-art configurations can be achieved by pushing the depth to 16-19 weight layers. These findings were the basis of our ImageNet Challenge 2014 submission, where our team secured the first and the second places in the localisation and classification tracks respectively. We also show that our representations generalise well to other datasets, where they achieve state-of-the-art results. We have made our two best-performing ConvNet models publicly available to facilitate further research on the use of deep visual representations in computer vision.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition}
+}
+
+@article{smith-bindmanRadiationDoseAssociated2009,
+  title = {Radiation {{Dose Associated With Common Computed Tomography Examinations}} and the {{Associated Lifetime Attributable Risk}} of {{Cancer}}},
+  author = {Smith-Bindman, Rebecca and Lipson, Jafi and Marcus, Ralph and Kim, Kwang-Pyo and Mahesh, Mahadevappa and Gould, Robert and Berrington de González, Amy and Miglioretti, Diana L.},
+  date = {2009-12-14},
+  journaltitle = {Archives of Internal Medicine},
+  shortjournal = {Archives of Internal Medicine},
+  volume = {169},
+  number = {22},
+  pages = {2078--2086},
+  issn = {0003-9926},
+  doi = {10.1001/archinternmed.2009.427},
+  abstract = {Use of computed tomography (CT) for diagnostic evaluation has increased dramatically over the past 2 decades. Even though CT is associated with substantially higher radiation exposure than conventional radiography, typical doses are not known. We sought to estimate the radiation dose associated with common CT studies in clinical practice and quantify the potential cancer risk associated with these examinations.We conducted a retrospective cross-sectional study describing radiation dose associated with the 11 most common types of diagnostic CT studies performed on 1119 consecutive adult patients at 4 San Francisco Bay Area institutions in California between January 1 and May 30, 2008. We estimated lifetime attributable risks of cancer by study type from these measured doses.Radiation doses varied significantly between the different types of CT studies. The overall median effective doses ranged from 2 millisieverts (mSv) for a routine head CT scan to 31 mSv for a multiphase abdomen and pelvis CT scan. Within each type of CT study, effective dose varied significantly within and across institutions, with a mean 13-fold variation between the highest and lowest dose for each study type. The estimated number of CT scans that will lead to the development of a cancer varied widely depending on the specific type of CT examination and the patient's age and sex. An estimated 1 in 270 women who underwent CT coronary angiography at age 40 years will develop cancer from that CT scan (1 in 600 men), compared with an estimated 1 in 8100 women who had a routine head CT scan at the same age (1 in 11~080 men). For 20-year-old patients, the risks were approximately doubled, and for 60-year-old patients, they were approximately 50\% lower.Radiation doses from commonly performed diagnostic CT examinations are higher and more variable than generally quoted, highlighting the need for greater standardization across institutions.Arch Intern Med. 2009;169(22):2078-2086--{$>$}}
+}
+
+@inproceedings{szegedyGoingDeeperConvolutions2015,
+  title = {Going Deeper with Convolutions},
+  booktitle = {2015 {{IEEE Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})},
+  author = {Szegedy, Christian and Liu, Wei and Jia, Yangqing and Sermanet, Pierre and Reed, Scott and Anguelov, Dragomir and Erhan, Dumitru and Vanhoucke, Vincent and Rabinovich, Andrew},
+  date = {2015-06},
+  pages = {1--9},
+  issn = {1063-6919},
+  doi = {10.1109/CVPR.2015.7298594},
+  abstract = {We propose a deep convolutional neural network architecture codenamed Inception that achieves the new state of the art for classification and detection in the ImageNet Large-Scale Visual Recognition Challenge 2014 (ILSVRC14). The main hallmark of this architecture is the improved utilization of the computing resources inside the network. By a carefully crafted design, we increased the depth and width of the network while keeping the computational budget constant. To optimize quality, the architectural decisions were based on the Hebbian principle and the intuition of multi-scale processing. One particular incarnation used in our submission for ILSVRC14 is called GoogLeNet, a 22 layers deep network, the quality of which is assessed in the context of classification and detection.},
+  eventtitle = {2015 {{IEEE Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}
+}
+
+@book{TengGaoJunJieRuZhiLiaoXue2022,
+  title = {介入治疗学},
+  author = {滕皋军 and 王维},
+  date = {2022},
+  publisher = {人民卫生出版社}
+}
+
+@inproceedings{vaswaniAttentionAllYou2017,
+  title = {Attention Is {{All}} You {{Need}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, Łukasz and Polosukhin, Illia},
+  date = {2017},
+  volume = {30},
+  publisher = {Curran Associates, Inc.},
+  url = {https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html},
+  urldate = {2023-02-07},
+  abstract = {The dominant sequence transduction models are based on complex recurrent orconvolutional neural networks in an encoder and decoder configuration. The best performing such models also connect the encoder and decoder through an attentionm echanisms.  We propose a novel, simple network architecture based solely onan attention mechanism, dispensing with recurrence and convolutions entirely.Experiments on two machine translation tasks show these models to be superiorin quality while being more parallelizable and requiring significantly less timeto train. Our single model with 165 million parameters, achieves 27.5 BLEU onEnglish-to-German translation, improving over the existing best ensemble result by over 1 BLEU. On English-to-French translation, we outperform the previoussingle state-of-the-art with model by 0.7 BLEU, achieving a BLEU score of 41.1.}
+}
+
+@article{wangDICDNetDeepInterpretable2022,
+  title = {{{DICDNet}}: {{Deep Interpretable Convolutional Dictionary Network}} for {{Metal Artifact Reduction}} in {{CT Images}}},
+  shorttitle = {{{DICDNet}}},
+  author = {Wang, Hong and Li, Yuexiang and He, Nanjun and Ma, Kai and Meng, Deyu and Zheng, Yefeng},
+  date = {2022-04},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  volume = {41},
+  number = {4},
+  pages = {869--880},
+  issn = {1558-254X},
+  doi = {10.1109/TMI.2021.3127074},
+  abstract = {Computed tomography (CT) images are often impaired by unfavorable artifacts caused by metallic implants within patients, which would adversely affect the subsequent clinical diagnosis and treatment. Although the existing deep-learning-based approaches have achieved promising success on metal artifact reduction (MAR) for CT images, most of them treated the task as a general image restoration problem and utilized off-the-shelf network modules for image quality enhancement. Hence, such frameworks always suffer from lack of sufficient model interpretability for the specific task. Besides, the existing MAR techniques largely neglect the intrinsic prior knowledge underlying metal-corrupted CT images which is beneficial for the MAR performance improvement. In this paper, we specifically propose a deep interpretable convolutional dictionary network (DICDNet) for the MAR task. Particularly, we first explore that the metal artifacts always present non-local streaking and star-shape patterns in CT images. Based on such observations, a convolutional dictionary model is deployed to encode the metal artifacts. To solve the model, we propose a novel optimization algorithm based on the proximal gradient technique. With only simple operators, the iterative steps of the proposed algorithm can be easily unfolded into corresponding network modules with specific physical meanings. Comprehensive experiments on synthesized and clinical datasets substantiate the effectiveness of the proposed DICDNet as well as its superior interpretability, compared to current state-of-the-art MAR methods. Code is available at https://github.com/hongwang01/DICDNet.},
+  eventtitle = {{{IEEE Transactions}} on {{Medical Imaging}}},
+  keywords = {Computed tomography,CT metal artifact reduction,Dictionaries,generalization performance,Image reconstruction,interpretable dictionary learning,Mars,Metals,notion,Optimization,Task analysis}
+}
+
+@article{wangEndtoEndDeepNetwork2020,
+  title = {An {{End-to-End Deep Network}} for {{Reconstructing CT Images Directly From Sparse Sinograms}}},
+  author = {Wang, Wei and Xia, Xiang-Gen and He, Chuanjiang and Ren, Zemin and Lu, Jian and Wang, Tianfu and Lei, Baiying},
+  date = {2020},
+  journaltitle = {IEEE Transactions on Computational Imaging},
+  volume = {6},
+  pages = {1548--1560},
+  issn = {2333-9403},
+  doi = {10.1109/TCI.2020.3039385},
+  abstract = {Recently, deep-learning based methods have been widely used for computed tomography (CT) reconstruction. However, most of these methods need extra steps to convert the sinogrmas into CT images and so their networks are not end-to-end. In this paper, we propose an end-to-end deep network for CT image reconstruction, which directly maps sparse sinogramss to CT images. Our network has three cascaded blocks, where the first block is used to denoise and interpolate the sinograms, the second to map the sinograms to CT images and the last to denoise the CT images. The second block of our network implements the filter backprojection (FBP) algorithm or the Feldkamp-Davis-Kress (FDK) algorithm, where the filter step is implemented by a one-dimensional convolution layer and the backprojection is implemented by a sparse matrix multiplication. By incorporating the FBP/FDK algorithm into our network, training a fully connected layer to convert the sinograms to CT images is avoided and the number of weights of our network is decreased. Our network is trained with two labels, the sinograms and CT images, and can reconstruct good CT images even if the input sinograms are very sparse. Experimental results show that our network outperforms the state-of-the-art approaches on test datasets for the sparse CT reconstruction under fan beam and circular cone beam scanning geometry.},
+  eventtitle = {{{IEEE Transactions}} on {{Computational Imaging}}}
+}
+
+@article{wangReviewDeepLearning2023,
+  title = {A {{Review}} of {{Deep Learning CT Reconstruction}} from {{Incomplete Projection Data}}},
+  author = {Wang, Tao and Xia, Wenjun and Lu, Jingfeng and Zhang, Yi},
+  date = {2023},
+  journaltitle = {IEEE Transactions on Radiation and Plasma Medical Sciences},
+  pages = {1--1},
+  issn = {2469-7303},
+  doi = {10.1109/TRPMS.2023.3316349},
+  abstract = {Computed tomography (CT) is a widely used imaging technique in both medical and industrial applications. However, accurate CT reconstruction requires complete projection data, while incomplete data can result in significant artifacts in the reconstructed images, compromising their reliability for subsequent detection and diagnosis. As a result, accurate CT reconstruction from incomplete projection data remains a challenging research area in radiology. With the rapid development of deep learning (DL) techniques, many DL-based methods have been proposed for CT reconstruction from incomplete projection data. However, there are limited comprehensive surveys that summarize recent advances in this field. This paper provides a comprehensive overview of the current state-of-the-art DL-based CT reconstruction from incomplete projection data, including sparse-view reconstruction, limited-angle reconstruction, metal artifact reduction, interior tomography, and ring artifact reduction. This survey covers various DL-based solutions to the five problems, potential limitations of existing methods, and future research directions.},
+  eventtitle = {{{IEEE Transactions}} on {{Radiation}} and {{Plasma Medical Sciences}}}
+}
+
+@article{wolterinkGenerativeAdversarialNetworks2017,
+  title = {Generative {{Adversarial Networks}} for {{Noise Reduction}} in {{Low-Dose CT}}},
+  author = {Wolterink, Jelmer M. and Leiner, Tim and Viergever, Max A. and Išgum, Ivana},
+  date = {2017-12},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  volume = {36},
+  number = {12},
+  pages = {2536--2545},
+  issn = {1558-254X},
+  doi = {10.1109/TMI.2017.2708987},
+  abstract = {Noise is inherent to low-dose CT acquisition. We propose to train a convolutional neural network (CNN) jointly with an adversarial CNN to estimate routine-dose CT images from low-dose CT images and hence reduce noise. A generator CNN was trained to transform low-dose CT images into routine-dose CT images using voxelwise loss minimization. An adversarial discriminator CNN was simultaneously trained to distinguish the output of the generator from routine-dose CT images. The performance of this discriminator was used as an adversarial loss for the generator. Experiments were performed using CT images of an anthropomorphic phantom containing calcium inserts, as well as patient non-contrast-enhanced cardiac CT images. The phantom and patients were scanned at 20\% and 100\% routine clinical dose. Three training strategies were compared: the first used only voxelwise loss, the second combined voxelwise loss and adversarial loss, and the third used only adversarial loss. The results showed that training with only voxelwise loss resulted in the highest peak signal-to-noise ratio with respect to reference routine-dose images. However, CNNs trained with adversarial loss captured image statistics of routine-dose images better. Noise reduction improved quantification of low-density calcified inserts in phantom CT images and allowed coronary calcium scoring in low-dose patient CT images with high noise levels. Testing took less than 10 s per CT volume. CNN-based low-dose CT noise reduction in the image domain is feasible. Training with an adversarial network improves the CNNs ability to generate images with an appearance similar to that of reference routine-dose CT images.},
+  eventtitle = {{{IEEE Transactions}} on {{Medical Imaging}}},
+  language = {en-US}
+}
+
+@article{xiaPhysicsModelBasedDataDriven2023,
+  title = {Physics-/{{Model-Based}} and {{Data-Driven Methods}} for {{Low-Dose Computed Tomography}}: {{A}} Survey},
+  shorttitle = {Physics-/{{Model-Based}} and {{Data-Driven Methods}} for {{Low-Dose Computed Tomography}}},
+  author = {Xia, Wenjun and Shan, Hongming and Wang, Ge and Zhang, Yi},
+  date = {2023-03},
+  journaltitle = {IEEE Signal Processing Magazine},
+  volume = {40},
+  number = {2},
+  pages = {89--100},
+  issn = {1558-0792},
+  doi = {10.1109/MSP.2022.3204407},
+  abstract = {Since 2016, deep learning (DL) has advanced tomographic imaging with remarkable successes, especially in low-dose computed tomography (LDCT) imaging. Despite being driven by big data, the LDCT denoising and pure end-to-end reconstruction networks often suffer from the black-box nature and major issues, such as instabilities, which are major barriers to applying DL methods in LDCT applications. An emerging trend is to integrate imaging physics and models into deep networks, enabling a hybridization of physics-/model-based and data-driven elements. In this article, we systematically review the physics-/model-based data-driven methods for LDCT, summarize the loss functions and training strategies, evaluate the performance of different methods, and discuss relevant issues and future directions.},
+  eventtitle = {{{IEEE Signal Processing Magazine}}}
+}
+
+@article{xieArtifactRemovalUsing2018,
+  title = {Artifact {{Removal}} Using {{Improved GoogLeNet}} for {{Sparse-view CT Reconstruction}}},
+  author = {Xie, Shipeng and Zheng, Xinyu and Chen, Yang and Xie, Lizhe and Liu, Jin and Zhang, Yudong and Yan, Jingjie and Zhu, Hu and Hu, Yining},
+  date = {2018-04-30},
+  journaltitle = {Scientific Reports},
+  shortjournal = {Sci Rep},
+  volume = {8},
+  number = {1},
+  pages = {6700},
+  publisher = {Nature Publishing Group},
+  issn = {2045-2322},
+  doi = {10.1038/s41598-018-25153-w},
+  abstract = {Sparse-view Reconstruction can be used to provide accelerated low dose CT imaging with both accelerated scan and reduced projection/back-projection calculation. Despite the rapid developments, image noise and artifacts still remain a major issue in the low dose protocol. In this paper, a deep learning based method named Improved GoogLeNet is proposed to remove streak artifacts due to projection missing in sparse-view CT reconstruction. Residual learning is used in GoogLeNet to study the artifacts of sparse-view CT reconstruction, and then subtracts the artifacts obtained by learning from the sparse reconstructed images, finally recovers a clear correction image. The intensity of reconstruction using the proposed method is very close to the full-view projective reconstructed image. The results indicate that the proposed method is practical and effective for reducing the artifacts and preserving the quality of the reconstructed image.},
+  issue = {1},
+  language = {en},
+  keywords = {Experimental nuclear physics,Machine learning,Outcomes research}
+}
+
+@article{xuLowDoseXrayCT2012,
+  title = {Low-{{Dose X-ray CT Reconstruction}} via {{Dictionary Learning}}},
+  author = {Xu, Qiong and Yu, Hengyong and Mou, Xuanqin and Zhang, Lei and Hsieh, Jiang and Wang, Ge},
+  date = {2012-09},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  volume = {31},
+  number = {9},
+  pages = {1682--1697},
+  issn = {1558-254X},
+  doi = {10.1109/TMI.2012.2195669},
+  abstract = {Although diagnostic medical imaging provides enormous benefits in the early detection and accuracy diagnosis of various diseases, there are growing concerns on the potential side effect of radiation induced genetic, cancerous and other diseases. How to reduce radiation dose while maintaining the diagnostic performance is a major challenge in the computed tomography (CT) field. Inspired by the compressive sensing theory, the sparse constraint in terms of total variation (TV) minimization has already led to promising results for low-dose CT reconstruction. Compared to the discrete gradient transform used in the TV method, dictionary learning is proven to be an effective way for sparse representation. On the other hand, it is important to consider the statistical property of projection data in the low-dose CT case. Recently, we have developed a dictionary learning based approach for low-dose X-ray CT. In this paper, we present this method in detail and evaluate it in experiments. In our method, the sparse constraint in terms of a redundant dictionary is incorporated into an objective function in a statistical iterative reconstruction framework. The dictionary can be either predetermined before an image reconstruction task or adaptively defined during the reconstruction process. An alternating minimization scheme is developed to minimize the objective function. Our approach is evaluated with low-dose X-ray projections collected in animal and human CT studies, and the improvement associated with dictionary learning is quantified relative to filtered backprojection and TV-based reconstructions. The results show that the proposed approach might produce better images with lower noise and more detailed structural features in our selected cases. However, there is no proof that this is true for all kinds of structures.},
+  eventtitle = {{{IEEE Transactions}} on {{Medical Imaging}}}
+}
+
+@inproceedings{yingX2CTGANReconstructingCT2019,
+  title = {{{X2CT-GAN}}: {{Reconstructing CT From Biplanar X-Rays With Generative Adversarial Networks}}},
+  shorttitle = {{{X2CT-GAN}}},
+  booktitle = {2019 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})},
+  author = {Ying, Xingde and Guo, Heng and Ma, Kai and Wu, Jian and Weng, Zhengxin and Zheng, Yefeng},
+  date = {2019-06},
+  pages = {10611--10620},
+  issn = {2575-7075},
+  doi = {10.1109/CVPR.2019.01087},
+  abstract = {Computed tomography (CT) can provide a 3D view of the patient's internal organs, facilitating disease diagnosis, but it incurs more radiation dose to a patient and a CT scanner is much more cost prohibitive than an X-ray machine too. Traditional CT reconstruction methods require hundreds of X-ray projections through a full rotational scan of the body, which cannot be performed on a typical X-ray machine. In this work, we propose to reconstruct CT from two orthogonal X-rays using the generative adversarial network (GAN) framework. A specially designed generator network is exploited to increase data dimension from 2D (X-rays) to 3D (CT), which is not addressed in previous research of GAN. A novel feature fusion method is proposed to combine information from two X-rays. The mean squared error (MSE) loss and adversarial loss are combined to train the generator, resulting in a high-quality CT volume both visually and quantitatively. Extensive experiments on a publicly available chest CT dataset demonstrate the effectiveness of the proposed method. It could be a nice enhancement of a low-cost X-ray machine to provide physicians a CT-like 3D volume in several niche applications.},
+  eventtitle = {2019 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})},
+  keywords = {3D from Multiview and Sensors,Biological and Cell Microscopy,Deep Learning,Image and Video Synthesis,Medical}
+}
+
+@inproceedings{yuanSIPIDDeepLearning2018,
+  title = {{{SIPID}}: {{A}} Deep Learning Framework for Sinogram Interpolation and Image Denoising in Low-Dose {{CT}} Reconstruction},
+  shorttitle = {{{SIPID}}},
+  booktitle = {2018 {{IEEE}} 15th {{International Symposium}} on {{Biomedical Imaging}} ({{ISBI}} 2018)},
+  author = {Yuan, Huizhuo and Jia, Jinzhu and Zhu, Zhanxing},
+  date = {2018-04},
+  pages = {1521--1524},
+  issn = {1945-8452},
+  doi = {10.1109/ISBI.2018.8363862},
+  abstract = {Low-dose CT plays a significant role in reducing radiation risks to patients. The main challenge is to achieve better image quality while lowering the imaging dose. In this work, we propose a hybrid deep learning approach that combines sinogram interpolation with image denoising, referred to as SIPID. Through alternatively training the sinogram interpolation network and the image denoising network, the proposed SIPID network can achieve more accurate reconstructions, compared with pure image denoising. We empirically achieved a {$>$} 2dB improvement on PSNR based on the Residual U-net denoising structure. Furthermore, we highlight that our design of sinogram interpolation network can be a promising component in CT reconstruction, since it can also seamlessly fit to all kinds of image denoising networks.},
+  eventtitle = {2018 {{IEEE}} 15th {{International Symposium}} on {{Biomedical Imaging}} ({{ISBI}} 2018)}
+}
+
+@article{yuDeepSinogramCompletion2021,
+  title = {Deep {{Sinogram Completion With Image Prior}} for {{Metal Artifact Reduction}} in {{CT Images}}},
+  author = {Yu, Lequan and Zhang, Zhicheng and Li, Xiaomeng and Xing, Lei},
+  date = {2021-01},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  volume = {40},
+  number = {1},
+  pages = {228--238},
+  issn = {1558-254X},
+  doi = {10.1109/TMI.2020.3025064},
+  abstract = {Computed tomography (CT) has been widely used for medical diagnosis, assessment, and therapy planning and guidance. In reality, CT images may be affected adversely in the presence of metallic objects, which could lead to severe metal artifacts and influence clinical diagnosis or dose calculation in radiation therapy. In this article, we propose a generalizable framework for metal artifact reduction (MAR) by simultaneously leveraging the advantages of image domain and sinogram domain-based MAR techniques. We formulate our framework as a sinogram completion problem and train a neural network (SinoNet) to restore the metal-affected projections. To improve the continuity of the completed projections at the boundary of metal trace and thus alleviate new artifacts in the reconstructed CT images, we train another neural network (PriorNet) to generate a good prior image to guide sinogram learning, and further design a novel residual sinogram learning strategy to effectively utilize the prior image information for better sinogram completion. The two networks are jointly trained in an end-to-end fashion with a differentiable forward projection (FP) operation so that the prior image generation and deep sinogram completion procedures can benefit from each other. Finally, the artifact-reduced CT images are reconstructed using the filtered backward projection (FBP) from the completed sinogram. Extensive experiments on simulated and real artifacts data demonstrate that our method produces superior artifact-reduced results while preserving the anatomical structures and outperforms other MAR methods.},
+  eventtitle = {{{IEEE Transactions}} on {{Medical Imaging}}},
+  keywords = {Computed tomography,deep learning,Image generation,Image reconstruction,Image restoration,Interpolation,Metal artifact reduction,Metals,Neural networks,prior image,residual learning,sinogram completion}
+}
+
+@inproceedings{yuTotalVariationBased2005,
+  title = {Total {{Variation Based Iterative Image Reconstruction}}},
+  booktitle = {Computer {{Vision}} for {{Biomedical Image Applications}}},
+  author = {Yu, Guoqiang and Li, Liang and Gu, Jianwei and Zhang, Li},
+  editor = {Liu, Yanxi and Jiang, Tianzi and Zhang, Changshui},
+  date = {2005},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {526--534},
+  publisher = {Springer},
+  location = {Berlin, Heidelberg},
+  doi = {10.1007/11569541_53},
+  abstract = {Image reconstruction is an active research field and plays an important role in many applications . In this paper, we propose a new approach. Firstly, we introduce the minimum total variation (TV) criterion in the optimization process of image reconstruction; secondly, we introduce the level set method to obtain the solution. The TV principle has been studied intensively in the community of image processing and computer vision. The TV constrained minimization problem is convex and has a unique solution. The standard level set method provides the way to get the solution. We validated the proposed model on both toy data and real data. The experimental results show that the TV principle has the advantages of reducing noise and artifacts and preserving edges. The experiments also indicate that the proposed method is suitable and applicable to practical applications.},
+  isbn = {978-3-540-32125-5},
+  language = {en},
+  keywords = {Algebraic Reconstruction Technique,Iterative Image,Metal Artifact,Total Variation,Total Variation Model}
+}
+
+@article{zhangComputedTomographySinogram2016,
+  title = {Computed {{Tomography Sinogram Inpainting With Compound Prior Modelling Both Sinogram}} and {{Image Sparsity}}},
+  author = {Zhang, Hanming and Li, Lei and Wang, Linyuan and Sun, Yanmin and Yan, Bin and Cai, Ailong and Hu, Guoen},
+  date = {2016-10},
+  journaltitle = {IEEE Transactions on Nuclear Science},
+  volume = {63},
+  number = {5},
+  pages = {2567--2576},
+  issn = {1558-1578},
+  doi = {10.1109/TNS.2016.2577045},
+  abstract = {The presence of metal objects remains a challenge in x-ray computed tomography (CT) imaging. Sinograms passing through metals, called metal trace, usually provide uncorrected information and are considered missing in CT image reconstruction. The sparse prior of an image in some appropriate transform domains, defined implicit sparsity, is often used in sinogram inpainting methods for metal trace recovery. However, conventional inpainting methods only employ the implicit sparsity of a sinogram and often result in several artifacts in the reconstructed images. In this paper, we propose a sinogram inpainting model with implicit sparsity exploitation for both sinogram and image. A newly added regularization term, which minimizes the sparse representation of image objects, is utilized to reduce unwanted artifacts and preserve fine structures. To solve the proposed model, we then present an efficient iterative algorithm based on the Chambolle-Pock optimization approach. The results for both digital phantom and actual CT data indicate that the new inpainting method exhibits reasonable performance and outperforms the conventional methods when applied to metal artifact reduction problems.},
+  eventtitle = {{{IEEE Transactions}} on {{Nuclear Science}}},
+  keywords = {Computed tomography,Image reconstruction,Interpolation,Iterative methods,metal artifact reduction,Metals,Optimization,sinogram inpainting,sparsity exploitation,Transforms}
+}
+
+@article{zhangConvolutionalNeuralNetwork2018,
+  title = {Convolutional {{Neural Network Based Metal Artifact Reduction}} in {{X-Ray Computed Tomography}}},
+  author = {Zhang, Yanbo and Yu, Hengyong},
+  date = {2018-06},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  volume = {37},
+  number = {6},
+  pages = {1370--1381},
+  issn = {1558-254X},
+  doi = {10.1109/TMI.2018.2823083},
+  abstract = {In the presence of metal implants, metal artifacts are introduced to x-ray computed tomography CT images. Although a large number of metal artifact reduction (MAR) methods have been proposed in the past decades, MAR is still one of the major problems in clinical x-ray CT. In this paper, we develop a convolutional neural network (CNN)-based open MAR framework, which fuses the information from the original and corrected images to suppress artifacts. The proposed approach consists of two phases. In the CNN training phase, we build a database consisting of metal-free, metal-inserted and pre-corrected CT images, and image patches are extracted and used for CNN training. In the MAR phase, the uncorrected and pre-corrected images are used as the input of the trained CNN to generate a CNN image with reduced artifacts. To further reduce the remaining artifacts, water equivalent tissues in a CNN image are set to a uniform value to yield a CNN prior, whose forward projections are used to replace the metal-affected projections, followed by the FBP reconstruction. The effectiveness of the proposed method is validated on both simulated and real data. Experimental results demonstrate the superior MAR capability of the proposed method to its competitors in terms of artifact suppression and preservation of anatomical structures in the vicinity of metal implants.},
+  eventtitle = {{{IEEE Transactions}} on {{Medical Imaging}}},
+  keywords = {Attenuation,Bones,Computed tomography,convolutional neural networks,Convolutional neural networks,Databases,deep learning,Image reconstruction,metal artifacts,Metals,X-ray computed tomography (CT)}
+}
+
+@article{zhangIterativeReconstructionXRay2014a,
+  title = {Iterative {{Reconstruction}} for {{X-Ray Computed Tomography Using Prior-Image Induced Nonlocal Regularization}}},
+  author = {Zhang, Hua and Huang, Jing and Ma, Jianhua and Bian, Zhaoying and Feng, Qianjin and Lu, Hongbing and Liang, Zhengrong and Chen, Wufan},
+  date = {2014-09},
+  journaltitle = {IEEE Transactions on Biomedical Engineering},
+  volume = {61},
+  number = {9},
+  pages = {2367--2378},
+  issn = {1558-2531},
+  doi = {10.1109/TBME.2013.2287244},
+  abstract = {Repeated X-ray computed tomography (CT) scans are often required in several specific applications such as perfusion imaging, image-guided biopsy needle, image-guided intervention, and radiotherapy with noticeable benefits. However, the associated cumulative radiation dose significantly increases as comparison with that used in the conventional CT scan, which has raised major concerns in patients. In this study, to realize radiation dose reduction by reducing the X-ray tube current and exposure time (mAs) in repeated CT scans, we propose a prior-image induced nonlocal (PINL) regularization for statistical iterative reconstruction via the penalized weighted least-squares (PWLS) criteria, which we refer to as “PWLS-PINL”. Specifically, the PINL regularization utilizes the redundant information in the prior image and the weighted least-squares term considers a data-dependent variance estimation, aiming to improve current low-dose image quality. Subsequently, a modified iterative successive overrelaxation algorithm is adopted to optimize the associative objective function. Experimental results on both phantom and patient data show that the present PWLS-PINL method can achieve promising gains over the other existing methods in terms of the noise reduction, low-contrast object detection, and edge detail preservation.},
+  eventtitle = {{{IEEE Transactions}} on {{Biomedical Engineering}}}
+}
+
+@inproceedings{zhangTransCTDualPathTransformer2021,
+  title = {{{TransCT}}: {{Dual-Path Transformer}} for {{Low Dose Computed Tomography}}},
+  shorttitle = {{{TransCT}}},
+  booktitle = {Medical {{Image Computing}} and {{Computer Assisted Intervention}} – {{MICCAI}} 2021},
+  author = {Zhang, Zhicheng and Yu, Lequan and Liang, Xiaokun and Zhao, Wei and Xing, Lei},
+  editor = {family=Bruijne, given=Marleen, prefix=de, useprefix=true and Cattin, Philippe C. and Cotin, Stéphane and Padoy, Nicolas and Speidel, Stefanie and Zheng, Yefeng and Essert, Caroline},
+  date = {2021},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {55--64},
+  publisher = {Springer International Publishing},
+  location = {Cham},
+  doi = {10.1007/978-3-030-87231-1_6},
+  abstract = {Low dose computed tomography (LDCT) has attracted more and more attention in routine clinical diagnosis assessment, therapy planning, etc., which can reduce the dose of X-ray radiation to patients. However, the noise caused by low X-ray exposure degrades the CT image quality and then affects clinical diagnosis accuracy. In this paper, we train a transformer-based neural network to enhance the final CT image quality. To be specific, we first decompose the noisy LDCT image into two parts: high-frequency (HF) and low-frequency (LF) compositions. Then, we extract content features (\$\$X\_\{L\_c\}\$\$XLc) and latent texture features (\$\$X\_\{L\_t\}\$\$XLt) from the LF part, as well as HF embeddings (\$\$X\_\{H\_f\}\$\$XHf) from the HF part. Further, we feed \$\$X\_\{L\_t\}\$\$XLtand \$\$X\_\{H\_f\}\$\$XHfinto a modified transformer with three encoders and decoders to obtain well-refined HF texture features. After that, we combine these well-refined HF texture features with the pre-extracted \$\$X\_\{L\_c\}\$\$XLcto encourage the restoration of high-quality LDCT images with the assistance of piecewise reconstruction. Extensive experiments on Mayo LDCT dataset show that our method produces superior results and outperforms other methods.},
+  isbn = {978-3-030-87231-1},
+  language = {en}
+}
+
+@article{zhangUseDeepLearning2022a,
+  title = {The Use of Deep Learning Methods in Low-Dose Computed Tomography Image Reconstruction: A Systematic Review},
+  shorttitle = {The Use of Deep Learning Methods in Low-Dose Computed Tomography Image Reconstruction},
+  author = {Zhang, Minghan and Gu, Sai and Shi, Yuhui},
+  date = {2022-12-01},
+  journaltitle = {Complex \& Intelligent Systems},
+  shortjournal = {Complex Intell. Syst.},
+  volume = {8},
+  number = {6},
+  pages = {5545--5561},
+  issn = {2198-6053},
+  doi = {10.1007/s40747-022-00724-7},
+  abstract = {Conventional reconstruction techniques, such as filtered back projection (FBP) and iterative reconstruction (IR), which have been utilised widely in the image reconstruction process of computed tomography (CT) are not suitable in the case of low-dose CT applications, because of the unsatisfying quality of the reconstructed image and inefficient reconstruction time. Therefore, as the demand for CT radiation dose reduction continues to increase, the use of artificial intelligence (AI) in image reconstruction has become a trend that attracts more and more attention. This systematic review examined various deep learning methods to determine their characteristics, availability, intended use and expected outputs concerning low-dose CT image reconstruction. Utilising the methodology of Kitchenham and Charter, we performed a systematic search of the literature from 2016 to 2021 in Springer, Science Direct, arXiv, PubMed, ACM, IEEE, and Scopus. This review showed that algorithms using deep learning technology are superior to traditional IR methods in noise suppression, artifact reduction and structure preservation, in terms of improving the image quality of low-dose reconstructed images. In conclusion, we provided an overview of the use of deep learning approaches in low-dose CT image reconstruction together with their benefits, limitations, and opportunities for improvement.},
+  language = {en},
+  keywords = {Artificial intelligence (AI),Deep learning (DL),Low-dose computed tomography (LDCT),Systematic review}
+}
+
+@inproceedings{zhengLowDoseCT2016,
+  title = {Low Dose {{CT}} Image Reconstruction with Learned Sparsifying Transform},
+  booktitle = {2016 {{IEEE}} 12th {{Image}}, {{Video}}, and {{Multidimensional Signal Processing Workshop}} ({{IVMSP}})},
+  author = {Zheng, Xuehang and Lu, Zening and Ravishankar, Saiprasad and Long, Yong and Fessler, Jeffrey A.},
+  date = {2016-07},
+  pages = {1--5},
+  doi = {10.1109/IVMSPW.2016.7528219},
+  abstract = {A major challenge in computed tomography (CT) is to reduce X-ray dose to a low or even ultra-low level while maintaining the high quality of reconstructed images. We propose a new method for CT reconstruction that combines penalized weighted-least squares reconstruction (PWLS) with regularization based on a sparsifying transform (PWLS-ST) learned from a dataset of numerous CT images. We adopt an alternating algorithm to optimize the PWLS-ST cost function that alternates between a CT image update step and a sparse coding step. We adopt a relaxed linearized augmented Lagrangian method with ordered-subsets (relaxed OS-LALM) to accelerate the CT image update step by reducing the number of forward and backward projections. Numerical experiments on the XCAT phantom show that for low dose levels, the proposed PWLS-ST method dramatically improves the quality of reconstructed images compared to PWLS reconstruction with a nonadaptive edge-preserving regularizer (PWLS-EP).},
+  eventtitle = {2016 {{IEEE}} 12th {{Image}}, {{Video}}, and {{Multidimensional Signal Processing Workshop}} ({{IVMSP}})}
+}
+
+@article{zhouDuDoDRNetDualdomainData2022,
+  title = {{{DuDoDR-Net}}: {{Dual-domain}} Data Consistent Recurrent Network for Simultaneous Sparse View and Metal Artifact Reduction in Computed Tomography},
+  shorttitle = {{{DuDoDR-Net}}},
+  author = {Zhou, Bo and Chen, Xiongchao and Zhou, S. Kevin and Duncan, James S. and Liu, Chi},
+  date = {2022-01-01},
+  journaltitle = {Medical Image Analysis},
+  shortjournal = {Medical Image Analysis},
+  volume = {75},
+  pages = {102289},
+  issn = {1361-8415},
+  doi = {10.1016/j.media.2021.102289},
+  abstract = {Sparse-view computed tomography (SVCT) aims to reconstruct a cross-sectional image using a reduced number of x-ray projections. While SVCT can efficiently reduce the radiation dose, the reconstruction suffers from severe streak artifacts, and the artifacts are further amplified with the presence of metallic implants, which could adversely impact the medical diagnosis and other downstream applications. Previous methods have extensively explored either SVCT reconstruction without metallic implants, or full-view CT metal artifact reduction (MAR). The issue of simultaneous sparse-view and metal artifact reduction (SVMAR) remains under-explored, and it is infeasible to directly apply previous SVCT and MAR methods to SVMAR which may yield non-ideal reconstruction quality. In this work, we propose a dual-domain data consistent recurrent network, called DuDoDR-Net, for SVMAR. Our DuDoDR-Net aims to reconstruct an artifact-free image by recurrent image domain and sinogram domain restorations. To ensure the metal-free part of acquired projection data is preserved, we also develop the image data consistent layer (iDCL) and sinogram data consistent layer (sDCL) that are interleaved in our recurrent framework. Our experimental results demonstrate that our DuDoDR-Net is able to produce superior artifact-reduced results while preserving the anatomical structures, that outperforming previous SVCT and SVMAR methods, under different sparse-view acquisition settings.},
+  language = {en},
+  keywords = {Computed tomography,Data consistency,Dual-domain network,Metal artifact,Recurrent network,Sparse view}
+}
+
+@article{zhouDuDoUFNetDualDomainUndertoFullyComplete2022,
+  title = {{{DuDoUFNet}}: {{Dual-Domain Under-to-Fully-Complete Progressive Restoration Network}} for {{Simultaneous Metal Artifact Reduction}} and {{Low-Dose CT Reconstruction}}},
+  shorttitle = {{{DuDoUFNet}}},
+  author = {Zhou, Bo and Chen, Xiongchao and Xie, Huidong and Zhou, S. Kevin and Duncan, James S. and Liu, Chi},
+  date = {2022-12},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  volume = {41},
+  number = {12},
+  pages = {3587--3599},
+  issn = {1558-254X},
+  doi = {10.1109/TMI.2022.3189759},
+  abstract = {To reduce the potential risk of radiation to the patient, low-dose computed tomography (LDCT) has been widely adopted in clinical practice for reconstructing cross-sectional images using sinograms with reduced x-ray flux. The LDCT image quality is often degraded by different levels of noise depending on the low-dose protocols. The image quality will be further degraded when the patient has metallic implants, where the image suffers from additional streak artifacts along with further amplified noise levels, thus affecting the medical diagnosis and other CT-related applications. Previous studies mainly focused either on denoising LDCT without considering metallic implants or full-dose CT metal artifact reduction (MAR). Directly applying previous LDCT or MAR approaches to the issue of simultaneous metal artifact reduction and low-dose CT (MARLD) may yield sub-optimal reconstruction results. In this work, we develop a dual-domain under-to-fully-complete progressive restoration network, called DuDoUFNet, for MARLD. Our DuDoUFNet aims to reconstruct images with substantially reduced noise and artifact by progressive sinogram to image domain restoration with a two-stage progressive restoration network design. Our experimental results demonstrate that our method can provide high-quality reconstruction, superior to previous LDCT and MAR methods under various low-dose and metal settings.},
+  eventtitle = {{{IEEE Transactions}} on {{Medical Imaging}}},
+  keywords = {Computed tomography,dual-domain learning,Image quality,Image reconstruction,Image restoration,Implants,Low-dose CT,metal artifact reduction,Metals,progressive restoration network,X-ray imaging}
+}
+
+@article{zhuImageReconstructionDomaintransform2018,
+  title = {Image Reconstruction by Domain-Transform Manifold Learning},
+  author = {Zhu, Bo and Liu, Jeremiah Z. and Cauley, Stephen F. and Rosen, Bruce R. and Rosen, Matthew S.},
+  date = {2018-03},
+  journaltitle = {Nature},
+  volume = {555},
+  number = {7697},
+  pages = {487--492},
+  publisher = {Nature Publishing Group},
+  issn = {1476-4687},
+  doi = {10.1038/nature25988},
+  abstract = {Image reconstruction is reformulated using a data-driven, supervised machine learning framework that allows a mapping between sensor and image domains to emerge from even noisy and undersampled data, improving accuracy and reducing image artefacts.},
+  issue = {7697},
+  language = {en},
+  keywords = {Computational science,Information theory and computation}
+}
