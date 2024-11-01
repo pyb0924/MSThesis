@@ -3,8 +3,11 @@
 \chapter{基于X线影像和先验的超稀疏CT重建}
 
 \section{引言}
+自CT被发明以来，降低剂量一直是CT领域的一个重要研究方向。
 
-\section{基于Transformer和特征饭投影的超稀疏CT重建}
+在此类使用直接深度学习方法进行重建的研究中，有一类比较特殊的问题：超稀疏（Ultra-sparse View）CT重建，或者说使用若干X线定位片生成CT影像的问题。减少投影角度是LDCT的一种实现方式，通常只包含100个投影角度以下的投影角度。而正常剂量的CT，使用FBP算法重建需要几百甚至上千个角度。对于这类稀疏角度CT重建问题，使用MBIR或者深度学习算法更为适合。而其中的极端情况，即仅包含几个投影角度的在深度学习算法出现之前，由于投影图包含的信息过少，几乎没有办法得到有效的结果。得益于神经网络强大的拟合能力，目前也已经有了不少这类问题的研究成果。Shen等人首先提出了PatRecon模型，使用单病人的样本通过二维X线影像生成三维CT断层数据，并且对不同数量扫描角度的X线影像样本做了对比实验，在不同部位的样本上证明了深度学习方法对这一问题的可行性\cite{shenPatientspecificReconstructionVolumetric2019}。Ying等人提出了X2CT模型，该方法利用两个正交的X线影像样本生成CT影像，结合生成对抗损失和投影重建损失函数，取得了比较成熟的效果\cite{yingX2CTGANReconstructingCT2019}。由于在该问题中，输入图像为若干张二维图像，而输出则为三维影像，因此在网络结构的设计上必然存在从二维向三维转换的过程，Ying等人也提出了全新的特征转换方式。Jiang等人使用条件变分自编码器（Conditional Variational Autoencoder，CVAE-GAN），从单个X线影像重建了三维CT影像\cite{jiangReconstruction3DCT2021}。Shen等人提出了几何信息图像重建（Geometry-Informed Image Reconstruction，GIIR），通过将不同投影角度的X线影像特征解耦的方式，实现了一个两步骤的三维CT重建\cite{shenGeometryinformedDeepLearning2022}。
+
+\section{基于Transformer和特征反投影的超稀疏CT重建}
 \subsection{FBFormer网络结构}
 
 \subsection{混合的PVT和UNet生成器}

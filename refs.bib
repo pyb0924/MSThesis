@@ -12,6 +12,35 @@
   eventtitle = {{{IEEE Transactions}} on {{Medical Imaging}}}
 }
 
+@article{barrettArtifactsCTRecognition2004,
+  title = {Artifacts in {{CT}}: {{Recognition}} and {{Avoidance}}},
+  shorttitle = {Artifacts in {{CT}}},
+  author = {Barrett, Julia F. and Keat, Nicholas},
+  date = {2004-11},
+  journaltitle = {RadioGraphics},
+  volume = {24},
+  number = {6},
+  pages = {1679--1691},
+  publisher = {Radiological Society of North America},
+  issn = {0271-5333},
+  doi = {10.1148/rg.246045065},
+  abstract = {Artifacts can seriously degrade the quality of computed tomographic (CT) images, sometimes to the point of making them diagnostically unusable. To optimize image quality, it is necessary to understand why artifacts occur and how they can be prevented or suppressed. CT artifacts originate from a range of sources. Physics-based artifacts result from the physical processes involved in the acquisition of CT data. Patient-based artifacts are caused by such factors as patient movement or the presence of metallic materials in or on the patient. Scanner-based artifacts result from imperfections in scanner function. Helical and multisection technique artifacts are produced by the image reconstruction process. Design features incorporated into modern CT scanners minimize some types of artifacts, and some can be partially corrected by the scanner software. However, in many instances, careful patient positioning and optimum selection of scanning parameters are the most important factors in avoiding CT artifacts. © RSNA, 2004}
+}
+
+@article{caiCineConeBeam2014,
+  title = {Cine {{Cone Beam CT Reconstruction Using Low-Rank Matrix Factorization}}: {{Algorithm}} and a {{Proof-of-Principle Study}}},
+  shorttitle = {Cine {{Cone Beam CT Reconstruction Using Low-Rank Matrix Factorization}}},
+  author = {Cai, Jian-Feng and Jia, Xun and Gao, Hao and Jiang, Steve B. and Shen, Zuowei and Zhao, Hongkai},
+  date = {2014-08},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  shortjournal = {IEEE Trans. Med. Imaging},
+  volume = {33},
+  number = {8},
+  pages = {1581--1591},
+  issn = {0278-0062, 1558-254X},
+  doi = {10.1109/TMI.2014.2319055}
+}
+
 @article{candesStableSignalRecovery2006,
   title = {Stable Signal Recovery from Incomplete and Inaccurate Measurements},
   author = {Candès, Emmanuel J. and Romberg, Justin K. and Tao, Terence},
@@ -24,6 +53,39 @@
   doi = {10.1002/cpa.20124},
   abstract = {Suppose we wish to recover a vector x0 ∈ ℝ𝓂 (e.g., a digital signal or image) from incomplete and contaminated observations y = A x0 + e; A is an 𝓃 × 𝓂 matrix with far fewer rows than columns (𝓃 ≪ 𝓂) and e is an error term. Is it possible to recover x0 accurately based on the data y? To recover x0, we consider the solution x\# to the 𝓁1-regularization problem \{\textbackslash rm \textbackslash min\textbackslash; |x\textbackslash |\_\textbackslash ell\_1 \textbackslash quad \textbackslash rm subject \textbackslash; to \textbackslash; \textbackslash |Ax-y\textbackslash |\_\textbackslash ell\_2 \textbackslash leq \textbackslash epsilon,\textbackslash{} where ϵ is the size of the error term e. We show that if A obeys a uniform uncertainty principle (with unit-normed columns) and if the vector x0 is sufficiently sparse, then the solution is within the noise level \textbackslash |x\textasciicircum\textbackslash sharp - x\_0\textbackslash |\_\textbackslash ell\_2 \textbackslash leq C \textbackslash cdot \textbackslash epsilon.\textbackslash{} As a first example, suppose that A is a Gaussian random matrix; then stable recovery occurs for almost all such A's provided that the number of nonzeros of x0 is of about the same order as the number of observations. As a second instance, suppose one observes few Fourier samples of x0; then stable recovery occurs for almost any set of 𝓃 coefficients provided that the number of nonzeros is of the order of 𝓃/(log 𝓂)6. In the case where the error term vanishes, the recovery is of course exact, and this work actually provides novel insights into the exact recovery phenomenon discussed in earlier papers. The methodology also explains why one can also very nearly recover approximately sparse signals. © 2006 Wiley Periodicals, Inc.\vphantom\}},
   language = {en}
+}
+
+@inproceedings{caoSwinUnetUnetLikePure2023,
+  title = {Swin-{{Unet}}: {{Unet-Like Pure Transformer}} for~{{Medical Image Segmentation}}},
+  shorttitle = {Swin-{{Unet}}},
+  booktitle = {Computer {{Vision}} – {{ECCV}} 2022 {{Workshops}}},
+  author = {Cao, Hu and Wang, Yueyue and Chen, Joy and Jiang, Dongsheng and Zhang, Xiaopeng and Tian, Qi and Wang, Manning},
+  editor = {Karlinsky, Leonid and Michaeli, Tomer and Nishino, Ko},
+  date = {2023},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {205--218},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-25066-8_9},
+  abstract = {In the past few years, convolutional neural networks (CNNs) have achieved milestones in medical image analysis. In particular, deep neural networks based on U-shaped architecture and skip-connections have been widely applied in various medical image tasks. However, although CNN has achieved excellent performance, it cannot learn global semantic information interaction well due to the locality of convolution operation. In this paper, we propose Swin-Unet, which is an Unet-like pure Transformer for medical image segmentation. The tokenized image patches are fed into the Transformer-based U-shaped Encoder-Decoder architecture with skip-connections for local-global semantic feature learning. Specifically, we use a hierarchical Swin Transformer with shifted windows as the encoder to extract context features. And a symmetric Swin Transformer-based decoder with a patch expanding layer is designed to perform the up-sampling operation to restore the spatial resolution of the feature maps. Under the direct down-sampling and up-sampling of the inputs and outputs by \$\$4\{\textbackslash times \}\$\$4×, experiments on multi-organ and cardiac segmentation tasks demonstrate that the pure Transformer-based U-shaped Encoder-Decoder network outperforms those methods with full-convolution or the combination of transformer and convolution. The codes have been publicly available at the link (https://github.com/HuCaoFighting/Swin-Unet).},
+  isbn = {978-3-031-25066-8},
+  language = {en},
+  keywords = {Medical image segmentation,notion,Self-attention,Transformer}
+}
+
+@article{chenBX2SNetLearningReconstruct2023,
+  title = {{{BX2S-Net}}: {{Learning}} to Reconstruct {{3D}} Spinal Structures from Bi-Planar {{X-ray}} Images},
+  shorttitle = {{{BX2S-Net}}},
+  author = {Chen, Zheye and Guo, Lijun and Zhang, Rong and Fang, Zhongding and He, Xiuchao and Wang, Jianhua},
+  date = {2023-03-01},
+  journaltitle = {Computers in Biology and Medicine},
+  shortjournal = {Computers in Biology and Medicine},
+  volume = {154},
+  pages = {106615},
+  issn = {0010-4825},
+  doi = {10.1016/j.compbiomed.2023.106615},
+  abstract = {Grasping good understanding of the weight-bearing spatial structure of the spine of a human subject in a standing position is critical for the treatment of spinal disorders. Such disorders are commonly diagnosed via 2D X-ray imaging of the human subject in a standing position. However, 3D reconstruction techniques based on bi-planar X-ray imaging can enable better exploration and analysis of the spinal structure. In particular, compared to earlier deformable modeling approaches, the recently-developed deep-learning-based 3D reconstruction methods exhibit higher efficiency and generalizability. But these methods usually employ simple architectures with 2D encoders and 3D decoders. Thus, these methods have several drawbacks, namely, the existence of a semantic gap between dimensionally-inconsistent feature maps, the difficulty of jointly handling multi-view inputs, and the information source limitations for the decoding process. In order to better assist clinicians and tackle these problems, we propose a novel convolutional neural network framework, which we call BX2S-Net, to effectively achieve 3D spine reconstruction based on bi-planar X-ray images. In particular, a dimensionally-consistent encoder–decoder architecture is designed in conjunction with a dimensionality enhancement method in order to reduce the semantic gap between feature maps and achieve information fusion for multi-view inputs. A feature-guided progressive decoding process is developed on the decoder side, where a full-scale feature attention guidance (FFAG) module is introduced to efficiently aggregate image features and guide the decoding process at each level. In addition, a class augmentation method and a spatially-weighted cross-entropy loss function are used for network training with improved reconstruction quality for the vertebral edge region. The experimental results demonstrate the effectiveness of our model in reconstructing high-quality 3D spinal structures from bi-planar X-ray images. The code is available at https://github.com/NBU-CVMI/bx2s-net.},
+  keywords = {3D reconstruction,Bi-planar X-ray images,Deep learning,Progressive decoding process,Spine}
 }
 
 @article{chengLearnedFullSamplingReconstruction2020a,
@@ -67,6 +129,20 @@
   eventtitle = {2010 3rd {{International Congress}} on {{Image}} and {{Signal Processing}}}
 }
 
+@article{chenLEARNLearnedExperts2018,
+  title = {{{LEARN}}: {{Learned Experts}}’ {{Assessment-Based Reconstruction Network}} for {{Sparse-Data CT}}},
+  shorttitle = {{{LEARN}}},
+  author = {Chen, Hu and Zhang, Yi and Chen, Yunjin and Zhang, Junfeng and Zhang, Weihua and Sun, Huaiqiang and Lv, Yang and Liao, Peixi and Zhou, Jiliu and Wang, Ge},
+  date = {2018-06},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  shortjournal = {IEEE Trans. Med. Imaging},
+  volume = {37},
+  number = {6},
+  pages = {1333--1347},
+  issn = {0278-0062, 1558-254X},
+  doi = {10.1109/TMI.2018.2805692}
+}
+
 @article{chenLowDoseCTResidual2017,
   title = {Low-{{Dose CT With}} a {{Residual Encoder-Decoder Convolutional Neural Network}}},
   author = {Chen, Hu and Zhang, Yi and Kalra, Mannudeep K. and Lin, Feng and Chen, Yang and Liao, Peixi and Zhou, Jiliu and Wang, Ge},
@@ -98,6 +174,23 @@
   keywords = {cardiology,communication satellites,compressed sensing,Computed tomography,computerised tomography,Data sets,dynamic CT,haemorheology,Heart,image reconstruction,Image reconstruction,image sequences,Medical image artifacts,Medical image contrast,medical image processing,Medical image reconstruction,Medical imaging,Medical X-ray imaging,Reconstruction,Sampling theory,Telecommunications: signal transmission and processing}
 }
 
+@online{chenTransUNetTransformersMake2021,
+  title = {{{TransUNet}}: {{Transformers Make Strong Encoders}} for {{Medical Image Segmentation}}},
+  shorttitle = {{{TransUNet}}},
+  author = {Chen, Jieneng and Lu, Yongyi and Yu, Qihang and Luo, Xiangde and Adeli, Ehsan and Wang, Yan and Lu, Le and Yuille, Alan L. and Zhou, Yuyin},
+  date = {2021-02-08},
+  eprint = {2102.04306},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2102.04306},
+  abstract = {Medical image segmentation is an essential prerequisite for developing healthcare systems, especially for disease diagnosis and treatment planning. On various medical image segmentation tasks, the u-shaped architecture, also known as U-Net, has become the de-facto standard and achieved tremendous success. However, due to the intrinsic locality of convolution operations, U-Net generally demonstrates limitations in explicitly modeling long-range dependency. Transformers, designed for sequence-to-sequence prediction, have emerged as alternative architectures with innate global self-attention mechanisms, but can result in limited localization abilities due to insufficient low-level details. In this paper, we propose TransUNet, which merits both Transformers and U-Net, as a strong alternative for medical image segmentation. On one hand, the Transformer encodes tokenized image patches from a convolution neural network (CNN) feature map as the input sequence for extracting global contexts. On the other hand, the decoder upsamples the encoded features which are then combined with the high-resolution CNN feature maps to enable precise localization. We argue that Transformers can serve as strong encoders for medical image segmentation tasks, with the combination of U-Net to enhance finer details by recovering localized spatial information. TransUNet achieves superior performances to various competing methods on different medical applications including multi-organ segmentation and cardiac segmentation. Code and models are available at https://github.com/Beckschen/TransUNet.},
+  language = {en-US},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,notion},
+  annotation = {Read\_Status: New\\
+Read\_Status\_Date: 2023-11-23T09:50:15.214Z}
+}
+
 @online{chungEmpiricalEvaluationGated2014,
   title = {Empirical {{Evaluation}} of {{Gated Recurrent Neural Networks}} on {{Sequence Modeling}}},
   author = {Chung, Junyoung and Gulcehre, Caglar and Cho, KyungHyun and Bengio, Yoshua},
@@ -109,6 +202,38 @@
   abstract = {In this paper we compare different types of recurrent units in recurrent neural networks (RNNs). Especially, we focus on more sophisticated units that implement a gating mechanism, such as a long short-term memory (LSTM) unit and a recently proposed gated recurrent unit (GRU). We evaluate these recurrent units on the tasks of polyphonic music modeling and speech signal modeling. Our experiments revealed that these advanced recurrent units are indeed better than more traditional recurrent units such as tanh units. Also, we found GRU to be comparable to LSTM.},
   pubstate = {prepublished},
   keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing}
+}
+
+@inproceedings{corona-figueroaMedNeRFMedicalNeural2022,
+  title = {{{MedNeRF}}: {{Medical Neural Radiance Fields}} for {{Reconstructing 3D-aware CT-Projections}} from a {{Single X-ray}}},
+  shorttitle = {{{MedNeRF}}},
+  booktitle = {2022 44th {{Annual International Conference}} of the {{IEEE Engineering}} in {{Medicine}} \& {{Biology Society}} ({{EMBC}})},
+  author = {Corona-Figueroa, Abril and Frawley, Jonathan and Taylor, Sam Bond- and Bethapudi, Sarath and Shum, Hubert P. H. and Willcocks, Chris G.},
+  date = {2022-07},
+  pages = {3843--3848},
+  issn = {2694-0604},
+  doi = {10.1109/EMBC48229.2022.9871757},
+  abstract = {Computed tomography (CT) is an effective med-ical imaging modality, widely used in the field of clinical medicine for the diagnosis of various pathologies. Advances in Multidetector CT imaging technology have enabled additional functionalities, including generation of thin slice multi planar cross-sectional body imaging and 3D reconstructions. However, this involves patients being exposed to a considerable dose of ionising radiation. Excessive ionising radiation can lead to deterministic and harmful effects on the body. This paper proposes a Deep Learning model that learns to reconstruct CT projections from a few or even a single-view X-ray. This is based on a novel architecture that builds from neural radiance fields, which learns a continuous representation of CT scans by disentangling the shape and volumetric depth of surface and internal anatomical structures from 2D images. Our model is trained on chest and knee datasets, and we demonstrate qual-itative and quantitative high-fidelity renderings and compare our approach to other recent radiance field-based methods. Our code and link to our datasets are available at https://qithub.com/abrilcf/mednerf Clinical relevance- Our model is able to infer the anatomical 3D structure from a few or a single-view X-ray showing future potential for reduced ionising radiation exposure during the imaging process.},
+  eventtitle = {2022 44th {{Annual International Conference}} of the {{IEEE Engineering}} in {{Medicine}} \& {{Biology Society}} ({{EMBC}})},
+  language = {en-US},
+  keywords = {Computed tomography,Deep learning,Ionizing radiation,Shape,Solid modeling,Surface reconstruction,Three-dimensional displays}
+}
+
+@article{dalmazResViTResidualVision2022,
+  title = {{{ResViT}}: {{Residual Vision Transformers}} for {{Multimodal Medical Image Synthesis}}},
+  shorttitle = {{{ResViT}}},
+  author = {Dalmaz, Onat and Yurt, Mahmut and Çukur, Tolga},
+  date = {2022-10},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  volume = {41},
+  number = {10},
+  pages = {2598--2614},
+  issn = {1558-254X},
+  doi = {10.1109/TMI.2022.3167808},
+  abstract = {Generative adversarial models with convolutional neural network (CNN) backbones have recently been established as state-of-the-art in numerous medical image synthesis tasks. However, CNNs are designed to perform local processing with compact filters, and this inductive bias compromises learning of contextual features. Here, we propose a novel generative adversarial approach for medical image synthesis, ResViT, that leverages the contextual sensitivity of vision transformers along with the precision of convolution operators and realism of adversarial learning. ResViT’s generator employs a central bottleneck comprising novel aggregated residual transformer (ART) blocks that synergistically combine residual convolutional and transformer modules. Residual connections in ART blocks promote diversity in captured representations, while a channel compression module distills task-relevant information. A weight sharing strategy is introduced among ART blocks to mitigate computational burden. A unified implementation is introduced to avoid the need to rebuild separate synthesis models for varying source-target modality configurations. Comprehensive demonstrations are performed for synthesizing missing sequences in multi-contrast MRI, and CT images from MRI. Our results indicate superiority of ResViT against competing CNN- and transformer-based methods in terms of qualitative observations and quantitative metrics.},
+  eventtitle = {{{IEEE Transactions}} on {{Medical Imaging}}},
+  language = {en-US},
+  keywords = {adversarial,Biomedical imaging,Computer architecture,generative,Image synthesis,Magnetic resonance imaging,Medical image synthesis,notion,residual,Subspace constraints,Task analysis,transformer,Transformers,unified,vision}
 }
 
 @article{demanMetalStreakArtifacts1999,
@@ -134,6 +259,21 @@
   volume = {52},
   number = {4},
   pages = {1289--1306}
+}
+
+@online{dosovitskiyImageWorth16x162021a,
+  title = {An {{Image}} Is {{Worth}} 16x16 {{Words}}: {{Transformers}} for {{Image Recognition}} at {{Scale}}},
+  shorttitle = {An {{Image}} Is {{Worth}} 16x16 {{Words}}},
+  author = {Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit, Jakob and Houlsby, Neil},
+  date = {2021-06-03},
+  eprint = {2010.11929},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2010.11929},
+  abstract = {While the Transformer architecture has become the de-facto standard for natural language processing tasks, its applications to computer vision remain limited. In vision, attention is either applied in conjunction with convolutional networks, or used to replace certain components of convolutional networks while keeping their overall structure in place. We show that this reliance on CNNs is not necessary and a pure transformer applied directly to sequences of image patches can perform very well on image classification tasks. When pre-trained on large amounts of data and transferred to multiple mid-sized or small image recognition benchmarks (ImageNet, CIFAR-100, VTAB, etc.), Vision Transformer (ViT) attains excellent results compared to state-of-the-art convolutional networks while requiring substantially fewer computational resources to train.},
+  language = {en-US},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning}
 }
 
 @inproceedings{fengPreliminaryStudyProjection2020a,
@@ -173,10 +313,82 @@
   abstract = {We propose a new framework for estimating generative models via adversarial nets, in which we simultaneously train two models: a generative model G that captures the data distribution, and a discriminative model D that estimates the probability that a sample came from the training data rather than G. The training procedure for G is to maximize the probability of D making a mistake. This framework corresponds to a minimax two-player game. In the space of arbitrary functions G and D, a unique solution exists, with G recovering the training data distribution and D equal to 1/2 everywhere. In the case where G and D are defined by multilayer perceptrons, the entire system can be trained with backpropagation. There is no need for any Markov chains or unrolled approximate inference networks during either training or generation of samples. Experiments demonstrate the potential of the framework through qualitative and quantitatively evaluation of the generated samples.}
 }
 
+@article{heH2FormerEfficientHierarchical2023,
+  title = {{{H2Former}}: {{An Efficient Hierarchical Hybrid Transformer}} for {{Medical Image Segmentation}}},
+  shorttitle = {{{H2Former}}},
+  author = {He, Along and Wang, Kai and Li, Tao and Du, Chengkun and Xia, Shuang and Fu, Huazhu},
+  date = {2023-09},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  volume = {42},
+  number = {9},
+  pages = {2763--2775},
+  issn = {1558-254X},
+  doi = {10.1109/TMI.2023.3264513},
+  abstract = {Accurate medical image segmentation is of great significance for computer aided diagnosis. Although methods based on convolutional neural networks (CNNs) have achieved good results, it is weak to model the long-range dependencies, which is very important for segmentation task to build global context dependencies. The Transformers can establish long-range dependencies among pixels by self-attention, providing a supplement to the local convolution. In addition, multi-scale feature fusion and feature selection are crucial for medical image segmentation tasks, which is ignored by Transformers. However, it is challenging to directly apply self-attention to CNNs due to the quadratic computational complexity for high-resolution feature maps. Therefore, to integrate the merits of CNNs, multi-scale channel attention and Transformers, we propose an efficient hierarchical hybrid vision Transformer (H2Former) for medical image segmentation. With these merits, the model can be data-efficient for limited medical data regime. The experimental results show that our approach exceeds previous Transformer, CNNs and hybrid methods on three 2D and two 3D medical image segmentation tasks. Moreover, it keeps computational efficiency in model parameters, FLOPs and inference time. For example, H2Former outperforms TransUNet by 2.29\% in IoU score on KVASIR-SEG dataset with 30.77\% parameters and 59.23\% FLOPs.},
+  eventtitle = {{{IEEE Transactions}} on {{Medical Imaging}}},
+  keywords = {notion}
+}
+
+@article{hendriksenTomosipoFastFlexible2021,
+  title = {Tomosipo: Fast, Flexible, and Convenient {{3D}} Tomography for Complex Scanning Geometries in {{Python}}},
+  shorttitle = {Tomosipo},
+  author = {Hendriksen, Allard A. and Schut, Dirk and Palenstijn, Willem Jan and Viganó, Nicola and Kim, Jisoo and Pelt, Daniël M. and family=Leeuwen, given=Tristan, prefix=van, useprefix=false and Batenburg, K. Joost},
+  date = {2021-11-22},
+  journaltitle = {Optics Express},
+  shortjournal = {Opt. Express, OE},
+  volume = {29},
+  number = {24},
+  pages = {40494--40513},
+  publisher = {Optica Publishing Group},
+  issn = {1094-4087},
+  doi = {10.1364/OE.439909},
+  abstract = {Tomography is a powerful tool for reconstructing the interior of an object from a series of projection images. Typically, the source and detector traverse a standard path (e.g., circular, helical). Recently, various techniques have emerged that use more complex acquisition geometries. Current software packages require significant handwork, or lack the flexibility to handle such geometries. Therefore, software is needed that can concisely represent, visualize, and compute reconstructions of complex acquisition geometries. We present tomosipo, a Python package that provides these capabilities in a concise and intuitive way. Case studies demonstrate the power and flexibility of tomosipo.},
+  language = {EN}
+}
+
+@article{henzlerSingleImageTomography2018,
+  title = {Single‐image {{Tomography}}: {{3D Volumes}} from {{2D Cranial X}}‐{{Rays}}},
+  shorttitle = {Single‐image {{Tomography}}},
+  author = {Henzler, Phlipp and Rasche, Volker and Ropinski, Timo and Ritschel, Tobias},
+  date = {2018-05},
+  journaltitle = {Computer Graphics Forum},
+  shortjournal = {Computer Graphics Forum},
+  volume = {37},
+  number = {2},
+  pages = {377--388},
+  issn = {0167-7055, 1467-8659},
+  doi = {10.1111/cgf.13369},
+  abstract = {Abstract             As many different 3D volumes could produce the same 2D x‐ray image, inverting this process is challenging. We show that recent deep learning‐based convolutional neural networks can solve this task. As the main challenge in learning is the sheer amount of data created when extending the 2D image into a 3D volume, we suggest firstly to learn a coarse, fixed‐resolution volume which is then fused in a second step with the input x‐ray into a high‐resolution volume. To train and validate our approach we introduce a new dataset that comprises of close to half a million computer‐simulated 2D x‐ray images of 3D volumes scanned from 175 mammalian species. Future applications of our approach include stereoscopic rendering of legacy x‐ray images, re‐rendering of x‐rays including changes of illumination, view pose or geometry. Our evaluation includes comparison to previous tomography work, previous learning methods using our data, a user study and application to a set of real x‐rays.},
+  language = {en}
+}
+
+@inproceedings{Herman2009FundamentalsOC,
+  title = {Fundamentals of Computerized Tomography: {{Image}} Reconstruction from Projections},
+  booktitle = {Advances in Pattern Recognition},
+  author = {Herman, Gabor T.},
+  date = {2009},
+  url = {https://api.semanticscholar.org/CorpusID:30049795}
+}
+
 @book{hsiehComputedTomographyPrinciples2022,
   title = {Computed {{Tomography}}: {{Principles}}, {{Design}}, {{Artifacts}}, and {{Recent Advances}}, {{Fourth Edition}}},
   author = {Hsieh, Jiang},
   date = {2022}
+}
+
+@article{huangMISSFormerEffectiveTransformer2023,
+  title = {{{MISSFormer}}: {{An Effective Transformer}} for {{2D Medical Image Segmentation}}},
+  shorttitle = {{{MISSFormer}}},
+  author = {Huang, Xiaohong and Deng, Zhifang and Li, Dandan and Yuan, Xueguang and Fu, Ying},
+  date = {2023-05},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  volume = {42},
+  number = {5},
+  pages = {1484--1494},
+  issn = {1558-254X},
+  doi = {10.1109/TMI.2022.3230943},
+  abstract = {Transformer-based methods are recently popular in vision tasks because of their capability to model global dependencies alone. However, it limits the performance of networks due to the lack of modeling local context and global-local correlations of multi-scale features. In this paper, we present MISSFormer, a Medical Image Segmentation tranSFormer. MISSFormer is a hierarchical encoder-decoder network with two appealing designs: 1) a feed-forward network in transformer block of U-shaped encoder-decoder structure is redesigned, ReMix-FFN, which explore global dependencies and local context for better feature discrimination by re-integrating the local context and global dependencies; 2) a ReMixed Transformer Context Bridge is proposed to extract the correlations of global dependencies and local context in multi-scale features generated by our hierarchical transformer encoder. The MISSFormer shows a solid capacity to capture more discriminative dependencies and context in medical image segmentation. The experiments on multi-organ, cardiac segmentation and retinal vessel segmentation tasks demonstrate the superiority, effectiveness and robustness of our MISSFormer. Specifically, the experimental results of MISSFormer trained from scratch even outperform state-of-the-art methods pre-trained on ImageNet, and the core designs can be generalized to other visual segmentation tasks. The code has been released on Github: https://github.com/ZhifangDeng/MISSFormer.},
+  eventtitle = {{{IEEE Transactions}} on {{Medical Imaging}}}
 }
 
 @book{HuXiaoKunZhangFuJunXiaoYueYongCTJieRuZhiLiaoXue2020,
@@ -299,6 +511,21 @@ titleTranslation: CT介入治疗学}
   keywords = {computed tomography,CT fluoroscopy,guidance,intervention,real-time imaging}
 }
 
+@article{leeDeepNeuralNetworkBasedSinogramSynthesis2019,
+  title = {Deep-{{Neural-Network-Based Sinogram Synthesis}} for {{Sparse-View CT Image Reconstruction}}},
+  author = {Lee, Hoyeon and Lee, Jongha and Kim, Hyeongseok and Cho, Byungchul and Cho, Seungryong},
+  date = {2019-03},
+  journaltitle = {IEEE Transactions on Radiation and Plasma Medical Sciences},
+  volume = {3},
+  number = {2},
+  pages = {109--119},
+  issn = {2469-7303},
+  doi = {10.1109/TRPMS.2018.2867611},
+  abstract = {Recently, a number of approaches to low-dose computed tomography (CT) have been developed and deployed in commercialized CT scanners. Tube current reduction is perhaps the most actively explored technology with advanced image reconstruction algorithms. Sparse data sampling is another viable option to the low-dose CT, and sparse-view CT has been particularly of interest among the researchers in CT community. Since analytic image reconstruction algorithms would lead to severe image artifacts, various iterative algorithms have been developed for reconstructing images from sparsely view-sampled projection data. However, iterative algorithms take much longer computation time than the analytic algorithms, and images are usually prone to different types of image artifacts that heavily depend on the reconstruction parameters. Interpolation methods have also been utilized to fill the missing data in the sinogram of sparse-view CT thus providing synthetically full data for analytic image reconstruction. In this paper, we introduce a deep-neural-network-enabled sinogram synthesis method for sparse-view CT, and show its outperformance to the existing interpolation methods and also to the iterative image reconstruction approach.},
+  eventtitle = {{{IEEE Transactions}} on {{Radiation}} and {{Plasma Medical Sciences}}},
+  keywords = {Computed tomography,Convolution,Deep learning,Image reconstruction,Interpolation,low-dose computed tomography (CT),Machine learning,sparse-view CT,Training,view interpolation}
+}
+
 @inproceedings{liangImproveAngularResolution2018,
   title = {Improve Angular Resolution for Sparse-View {{CT}} with Residual Convolutional Neural Network},
   booktitle = {Medical {{Imaging}} 2018: {{Physics}} of {{Medical Imaging}}},
@@ -351,6 +578,17 @@ titleTranslation: CT介入治疗学}
   eventtitle = {2020 13th {{International Congress}} on {{Image}} and {{Signal Processing}}, {{BioMedical Engineering}} and {{Informatics}} ({{CISP-BMEI}})}
 }
 
+@online{loshchilovDecoupledWeightDecay2017,
+  title = {Decoupled {{Weight Decay Regularization}}},
+  author = {Loshchilov, Ilya and Hutter, Frank},
+  date = {2017-11-14},
+  url = {https://arxiv.org/abs/1711.05101v3},
+  urldate = {2024-08-28},
+  abstract = {L\$\_2\$ regularization and weight decay regularization are equivalent for standard stochastic gradient descent (when rescaled by the learning rate), but as we demonstrate this is \textbackslash emph\{not\} the case for adaptive gradient algorithms, such as Adam. While common implementations of these algorithms employ L\$\_2\$ regularization (often calling it "weight decay" in what may be misleading due to the inequivalence we expose), we propose a simple modification to recover the original formulation of weight decay regularization by \textbackslash emph\{decoupling\} the weight decay from the optimization steps taken w.r.t. the loss function. We provide empirical evidence that our proposed modification (i) decouples the optimal choice of weight decay factor from the setting of the learning rate for both standard SGD and Adam and (ii) substantially improves Adam's generalization performance, allowing it to compete with SGD with momentum on image classification datasets (on which it was previously typically outperformed by the latter). Our proposed decoupled weight decay has already been adopted by many researchers, and the community has implemented it in TensorFlow and PyTorch; the complete source code for our experiments is available at https://github.com/loshchil/AdamW-and-SGDW},
+  language = {en},
+  organization = {arXiv.org}
+}
+
 @article{lossauneeelssLearningMetalArtifact2020,
   title = {Learning Metal Artifact Reduction in Cardiac {{CT}} Images with Moving Pacemakers},
   author = {Lossau (née Elss), T. and Nickisch, H. and Wissel, T. and Morlock, M. and Grass, M.},
@@ -389,6 +627,32 @@ titleTranslation: CT介入治疗学}
   abstract = {Purpose: While modern clinical CT scanners under normal circumstances produce high quality images, severe artifacts degrade the image quality and the diagnostic value if metal prostheses or other metal objects are present in the field of measurement. Standard methods for metal artifact reduction (MAR) replace those parts of the projection data that are affected by metal (the so-called metal trace or metal shadow) by interpolation. However, while sinogram interpolation methods efficiently remove metal artifacts, new artifacts are often introduced, as interpolation cannot completely recover the information from the metal trace. The purpose of this work is to introduce a generalized normalization technique for MAR, allowing for efficient reduction of metal artifacts while adding almost no new ones. The method presented is compared to a standard MAR method, as well as MAR using simple length normalization. Methods: In the first step, metal is segmented in the image domain by thresholding. A 3D forward projection identifies the metal trace in the original projections. Before interpolation, the projections are normalized based on a 3D forward projection of a prior image. This prior image is obtained, for example, by a multithreshold segmentation of the initial image. The original rawdata are divided by the projection data of the prior image and, after interpolation, denormalized again. Simulations and measurements are performed to compare normalized metal artifact reduction (NMAR) to standard MAR with linear interpolation and MAR based on simple length normalization. Results: Promising results for clinical spiral cone-beam data are presented in this work. Included are patients with hip prostheses, dental fillings, and spine fixation, which were scanned at pitch values ranging from 0.9 to 3.2. Image quality is improved considerably, particularly for metal implants within bone structures or in their proximity. The improvements are evaluated by comparing profiles through images and sinograms for the different methods and by inspecting ROIs. NMAR outperforms both other methods in all cases. It reduces metal artifacts to a minimum, even close to metal regions. Even for patients with dental fillings, which cause most severe artifacts, satisfactory results are obtained with NMAR. In contrast to other methods, NMAR prevents the usual blurring of structures close to metal implants if the metal artifacts are moderate. Conclusions: NMAR clearly outperforms the other methods for both moderate and severe artifacts. The proposed method reliably reduces metal artifacts from simulated as well as from clinical CT data. Computationally efficient and inexpensive compared to iterative methods, NMAR can be used as an additional step in any conventional sinogram inpainting-based MAR method.},
   language = {en},
   keywords = {Biomaterials,bone,Computed tomography,computerised tomography,image quality,Image reconstruction,Image scanners,image segmentation,Interpolation,Medical image artifacts,medical image processing,Medical image quality,Medical image segmentation,Medical imaging,Metadata,metal artifact correction,metal artifact reduction,metal artifacts,prosthetics,Segmentation,sinogram inpainting,Tissues}
+}
+
+@inproceedings{paszkePyTorchImperativeStyle2019,
+  title = {{{PyTorch}}: {{An Imperative Style}}, {{High-Performance Deep Learning Library}}},
+  shorttitle = {{{PyTorch}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+  date = {2019},
+  volume = {32},
+  publisher = {Curran Associates, Inc.},
+  url = {https://papers.nips.cc/paper/2019/hash/bdbca288fee7f92f2bfa9f7012727740-Abstract.html},
+  urldate = {2023-03-07},
+  abstract = {Deep learning frameworks have often focused on either usability or speed, but not both. PyTorch is a machine learning library that shows that these two goals are in fact compatible: it was designed from first principles to support an imperative and Pythonic programming style that supports code as a model, makes debugging easy and is consistent with other popular scientific computing libraries, while remaining efficient and supporting hardware accelerators such as GPUs. In this paper, we detail the principles that drove the implementation of PyTorch and how they are reflected in its architecture. We emphasize that every aspect of PyTorch is a regular Python program under the full control of its user. We also explain how the careful and pragmatic implementation of the key components of its runtime enables them to work together to achieve compelling performance. We demonstrate the efficiency of individual subsystems, as well as the overall speed of PyTorch on several commonly used benchmarks.}
+}
+
+@article{qiongxuLowDoseXrayCT2012,
+  title = {Low-{{Dose X-ray CT Reconstruction}} via {{Dictionary Learning}}},
+  author = {{Qiong Xu} and {Hengyong Yu} and {Xuanqin Mou} and {Lei Zhang} and {Jiang Hsieh} and {Ge Wang}},
+  date = {2012-09},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  shortjournal = {IEEE Trans. Med. Imaging},
+  volume = {31},
+  number = {9},
+  pages = {1682--1697},
+  issn = {0278-0062, 1558-254X},
+  doi = {10.1109/TMI.2012.2195669}
 }
 
 @inproceedings{ronnebergerUNetConvolutionalNetworks2015,
@@ -435,6 +699,20 @@ titleTranslation: CT介入治疗学}
   doi = {10.1109/78.193196},
   abstract = {A method for Bayesian reconstruction which relies on updates of single pixel values, rather than the entire image, at each iteration is presented. The technique is similar to Gauss-Seidel (GS) iteration for the solution of differential equations on finite grids. The computational cost per iteration of the GS approach is found to be approximately equal to that of gradient methods. For continuously valued images, GS is found to have significantly better convergence at modes representing high spatial frequencies. In addition, GS is well suited to segmentation when the image is constrained to be discretely valued. It is shown that Bayesian segmentation using GS iteration produces useful estimates at much lower signal-to-noise ratios than required for continuously valued reconstruction. The convergence properties of gradient ascent and GS for reconstruction from integral projections are analyzed, and simulations of both maximum-likelihood and maximum a posteriori cases are included.{$<>$}},
   eventtitle = {{{IEEE Transactions}} on {{Signal Processing}}}
+}
+
+@inproceedings{shenCOTRConvolutionTransformer2021,
+  title = {{{COTR}}: {{Convolution}} in {{Transformer Network}} for {{End}} to {{End Polyp Detection}}},
+  shorttitle = {{{COTR}}},
+  booktitle = {2021 7th {{International Conference}} on {{Computer}} and {{Communications}} ({{ICCC}})},
+  author = {Shen, Zhiqiang and Fu, Rongda and Lin, Chaonan and Zheng, Shaohua},
+  date = {2021-12-10},
+  pages = {1757--1761},
+  publisher = {IEEE},
+  location = {Chengdu, China},
+  doi = {10.1109/ICCC54389.2021.9674267},
+  eventtitle = {2021 7th {{International Conference}} on {{Computer}} and {{Communications}} ({{ICCC}})},
+  isbn = {978-1-66540-950-6}
 }
 
 @article{shenGeometryinformedDeepLearning2022,
@@ -497,6 +775,21 @@ titleTranslation: CT介入治疗学}
   abstract = {Use of computed tomography (CT) for diagnostic evaluation has increased dramatically over the past 2 decades. Even though CT is associated with substantially higher radiation exposure than conventional radiography, typical doses are not known. We sought to estimate the radiation dose associated with common CT studies in clinical practice and quantify the potential cancer risk associated with these examinations.We conducted a retrospective cross-sectional study describing radiation dose associated with the 11 most common types of diagnostic CT studies performed on 1119 consecutive adult patients at 4 San Francisco Bay Area institutions in California between January 1 and May 30, 2008. We estimated lifetime attributable risks of cancer by study type from these measured doses.Radiation doses varied significantly between the different types of CT studies. The overall median effective doses ranged from 2 millisieverts (mSv) for a routine head CT scan to 31 mSv for a multiphase abdomen and pelvis CT scan. Within each type of CT study, effective dose varied significantly within and across institutions, with a mean 13-fold variation between the highest and lowest dose for each study type. The estimated number of CT scans that will lead to the development of a cancer varied widely depending on the specific type of CT examination and the patient's age and sex. An estimated 1 in 270 women who underwent CT coronary angiography at age 40 years will develop cancer from that CT scan (1 in 600 men), compared with an estimated 1 in 8100 women who had a routine head CT scan at the same age (1 in 11~080 men). For 20-year-old patients, the risks were approximately doubled, and for 60-year-old patients, they were approximately 50\% lower.Radiation doses from commonly performed diagnostic CT examinations are higher and more variable than generally quoted, highlighting the need for greater standardization across institutions.Arch Intern Med. 2009;169(22):2078-2086--{$>$}}
 }
 
+@article{sunUltrasparseViewCT2022,
+  title = {An {{Ultra-sparse View CT Imaging Method Based}} on {{X-ray2CTNet}}},
+  author = {Sun, Xueqin and Li, Xuru and Chen, Ping},
+  date = {2022},
+  journaltitle = {IEEE Transactions on Computational Imaging},
+  volume = {8},
+  pages = {733--742},
+  issn = {2333-9403},
+  doi = {10.1109/TCI.2022.3201390},
+  abstract = {The prediction of the internal ballistic performance of solid rocket motors (SRMs) mainly depends on the observation of burning surface regression. The existing techniques have not yet achieved real-time, accurate and intuitive observations of the grain structural dynamic changes under hot conditions. Computed tomography (CT) imaging based on X-ray can be directly used to analyze the burning surface of SRM. However, neither the conventional CT imaging mode nor the current reconstruction algorithms, including full-view and sparse-view reconstruction methods, can be used in ignition tests. It is necessary to break through the limitation of sparse sampling and research ultra-sparse view reconstruction. Although computer vision technology has shown that 3D shapes can be estimated from very few 2D RGB images via deep learning, it remains challenging to reconstruct volumes from two 2D X-ray images. To tackle this issue here, we propose a 3D reconstruction network based on ultra-sparse projection views, namely X-ray2CTNet, which takes the 2D projections of any two orthogonal views as inputs to implement cross-dimensional inverse mapping from 2D (X-rays) to 3D (CT). In addition, to solve the insufficient dataset problem, training sets are constructed by simulating different models of grain regression for a certain type of propellant and utilizing a CT simulation platform. We pour fake grains that are the same as those of the simulation models to acquire the actual projections of two views for reconstructing the 3D volume. The obtained results prove the feasibility of our method. The proposed method provides a possibility for dynamic monitoring of burning surface regressions for SRMs in ground ignition tests.},
+  eventtitle = {{{IEEE Transactions}} on {{Computational Imaging}}},
+  language = {en-US},
+  keywords = {Burning surface regression,Computed tomography,CT,deep learning,Ignition,Imaging,Reconstruction algorithms,Solid modeling,SRM,Surface reconstruction,Three-dimensional displays,ultra-sparse view reconstruction}
+}
+
 @inproceedings{szegedyGoingDeeperConvolutions2015,
   title = {Going Deeper with Convolutions},
   booktitle = {2015 {{IEEE Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})},
@@ -514,6 +807,20 @@ titleTranslation: CT介入治疗学}
   author = {滕皋军 and 王维},
   date = {2022},
   publisher = {人民卫生出版社}
+}
+
+@inproceedings{tongXray2ShapeReconstruction3D2020,
+  title = {X-{{ray2Shape}}: {{Reconstruction}} of {{3D Liver Shape}} from a {{Single 2D Projection Image}}},
+  shorttitle = {X-{{ray2Shape}}},
+  booktitle = {2020 42nd {{Annual International Conference}} of the {{IEEE Engineering}} in {{Medicine}} \& {{Biology Society}} ({{EMBC}})},
+  author = {Tong, Fei and Nakao, Megumi and Wu, Shuqiong and Nakamura, Mitsuhiro and Matsuda, Tetsuya},
+  date = {2020-07},
+  pages = {1608--1611},
+  publisher = {IEEE},
+  location = {Montreal, QC, Canada},
+  doi = {10.1109/EMBC44109.2020.9176655},
+  eventtitle = {2020 42nd {{Annual International Conference}} of the {{IEEE Engineering}} in {{Medicine}} and {{Biology Society}} ({{EMBC}}) in Conjunction with the 43rd {{Annual Conference}} of the {{Canadian Medical}} and {{Biological Engineering Society}}},
+  isbn = {978-1-72811-990-8}
 }
 
 @inproceedings{vaswaniAttentionAllYou2017,
@@ -544,6 +851,23 @@ titleTranslation: CT介入治疗学}
   keywords = {Computed tomography,CT metal artifact reduction,Dictionaries,generalization performance,Image reconstruction,interpretable dictionary learning,Mars,Metals,notion,Optimization,Task analysis}
 }
 
+@inproceedings{wangDuDoTransDualDomainTransformer2022,
+  title = {{{DuDoTrans}}: {{Dual-Domain Transformer}} for~{{Sparse-View CT Reconstruction}}},
+  shorttitle = {{{DuDoTrans}}},
+  booktitle = {Machine {{Learning}} for {{Medical Image Reconstruction}}},
+  author = {Wang, Ce and Shang, Kun and Zhang, Haimiao and Li, Qian and Zhou, S. Kevin},
+  editor = {Haq, Nandinee and Johnson, Patricia and Maier, Andreas and Qin, Chen and Würfl, Tobias and Yoo, Jaejun},
+  date = {2022},
+  pages = {84--94},
+  publisher = {Springer International Publishing},
+  location = {Cham},
+  doi = {10.1007/978-3-031-17247-2_9},
+  abstract = {While Computed Tomography (CT) is necessary for clinical diagnosis, ionizing radiation in the imaging process induces irreversible injury, thereby driving researchers to study sparse-view CT reconstruction. Iterative models are proposed to alleviate the appeared artifacts in sparse-view CT images, but their computational cost is expensive. Deep-learning-based methods have gained prevalence due to the excellent reconstruction performances and computation efficiency. However, these methods ignore the mismatch between the CNN’s local feature extraction capability and the sinogram’s global characteristics. To overcome the problem, we propose Dual-Domain Transformer (DuDoTrans) to simultaneously restore informative sinograms via the long-range dependency modeling capability of Transformer and reconstruct CT image with both the enhanced and raw sinograms. With such a novel design, DuDoTrans even with fewer involved parameters is more effective and generalizes better than competing methods, which is confirmed by reconstruction performances on the NIH-AAPM and COVID-19 datasets. Finally, experiments also demonstrate its robustness to noise.},
+  isbn = {978-3-031-17247-2},
+  language = {en},
+  keywords = {CT Reconstruction,Sinogram restoration,Sparse view}
+}
+
 @article{wangEndtoEndDeepNetwork2020,
   title = {An {{End-to-End Deep Network}} for {{Reconstructing CT Images Directly From Sparse Sinograms}}},
   author = {Wang, Wei and Xia, Xiang-Gen and He, Chuanjiang and Ren, Zemin and Lu, Jian and Wang, Tianfu and Lei, Baiying},
@@ -557,6 +881,54 @@ titleTranslation: CT介入治疗学}
   eventtitle = {{{IEEE Transactions}} on {{Computational Imaging}}}
 }
 
+@article{wangMISSU3DMedical2023,
+  title = {{{MISSU}}: {{3D Medical Image Segmentation}} via {{Self-Distilling TransUNet}}},
+  shorttitle = {{{MISSU}}},
+  author = {Wang, Nan and Lin, Shaohui and Li, Xiaoxiao and Li, Ke and Shen, Yunhang and Gao, Yue and Ma, Lizhuang},
+  date = {2023-09},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  volume = {42},
+  number = {9},
+  pages = {2740--2750},
+  issn = {1558-254X},
+  doi = {10.1109/TMI.2023.3264433},
+  abstract = {U-Nets have achieved tremendous success in medical image segmentation. Nevertheless, it may have limitations in global (long-range) contextual interactions and edge-detail preservation. In contrast, the Transformer module has an excellent ability to capture long-range dependencies by leveraging the self-attention mechanism into the encoder. Although the Transformer module was born to model the long-range dependency on the extracted feature maps, it still suffers high computational and spatial complexities in processing high-resolution 3D feature maps. This motivates us to design an efficient Transformer-based UNet model and study the feasibility of Transformer-based network architectures for medical image segmentation tasks. To this end, we propose to self-distill a Transformer-based UNet for medical image segmentation, which simultaneously learns global semantic information and local spatial-detailed features. Meanwhile, a local multi-scale fusion block is first proposed to refine fine-grained details from the skipped connections in the encoder by the main CNN stem through self-distillation, only computed during training and removed at inference with minimal overhead. Extensive experiments on BraTS 2019 and CHAOS datasets show that our MISSU achieves the best performance over previous state-of-the-art methods. Code and models are available at: https://github.com/wangn123/MISSU.git},
+  eventtitle = {{{IEEE Transactions}} on {{Medical Imaging}}},
+  keywords = {notion},
+  annotation = {Read\_Status: New\\
+Read\_Status\_Date: 2023-11-23T09:53:24.998Z}
+}
+
+@article{wangPVTV2Improved2022,
+  title = {{{PVT}} v2: {{Improved}} Baselines with {{Pyramid Vision Transformer}}},
+  shorttitle = {{{PVT}} V2},
+  author = {Wang, Wenhai and Xie, Enze and Li, Xiang and Fan, Deng-Ping and Song, Kaitao and Liang, Ding and Lu, Tong and Luo, Ping and Shao, Ling},
+  date = {2022-09-01},
+  journaltitle = {Computational Visual Media},
+  shortjournal = {Comp. Visual Media},
+  volume = {8},
+  number = {3},
+  pages = {415--424},
+  issn = {2096-0662},
+  doi = {10.1007/s41095-022-0274-8},
+  abstract = {Transformers have recently lead to encouraging progress in computer vision. In this work, we present new baselines by improving the original Pyramid Vision Transformer (PVT v1) by adding three designs: (i) a linear complexity attention layer, (ii) an overlapping patch embedding, and (iii) a convolutional feed-forward network. With these modifications, PVT v2 reduces the computational complexity of PVT v1 to linearity and provides significant improvements on fundamental vision tasks such as classification, detection, and segmentation. In particular, PVT v2 achieves comparable or better performance than recent work such as the Swin transformer. We hope this work will facilitate state-of-the-art transformer research in computer vision. Code is available at https://github.com/whai362/PVT.},
+  language = {en},
+  keywords = {Artificial Intelligence,dense prediction,image classification,object detection,semantic segmentation,transformers}
+}
+
+@inproceedings{wangPyramidVisionTransformer2021,
+  title = {Pyramid {{Vision Transformer}}: {{A Versatile Backbone}} for {{Dense Prediction Without Convolutions}}},
+  shorttitle = {Pyramid {{Vision Transformer}}},
+  author = {Wang, Wenhai and Xie, Enze and Li, Xiang and Fan, Deng-Ping and Song, Kaitao and Liang, Ding and Lu, Tong and Luo, Ping and Shao, Ling},
+  date = {2021},
+  pages = {568--578},
+  url = {https://openaccess.thecvf.com/content/ICCV2021/html/Wang_Pyramid_Vision_Transformer_A_Versatile_Backbone_for_Dense_Prediction_Without_ICCV_2021_paper.html},
+  urldate = {2023-11-27},
+  eventtitle = {Proceedings of the {{IEEE}}/{{CVF International Conference}} on {{Computer Vision}}},
+  language = {en},
+  keywords = {notion}
+}
+
 @article{wangReviewDeepLearning2023,
   title = {A {{Review}} of {{Deep Learning CT Reconstruction}} from {{Incomplete Projection Data}}},
   author = {Wang, Tao and Xia, Wenjun and Lu, Jingfeng and Zhang, Yi},
@@ -567,6 +939,34 @@ titleTranslation: CT介入治疗学}
   doi = {10.1109/TRPMS.2023.3316349},
   abstract = {Computed tomography (CT) is a widely used imaging technique in both medical and industrial applications. However, accurate CT reconstruction requires complete projection data, while incomplete data can result in significant artifacts in the reconstructed images, compromising their reliability for subsequent detection and diagnosis. As a result, accurate CT reconstruction from incomplete projection data remains a challenging research area in radiology. With the rapid development of deep learning (DL) techniques, many DL-based methods have been proposed for CT reconstruction from incomplete projection data. However, there are limited comprehensive surveys that summarize recent advances in this field. This paper provides a comprehensive overview of the current state-of-the-art DL-based CT reconstruction from incomplete projection data, including sparse-view reconstruction, limited-angle reconstruction, metal artifact reduction, interior tomography, and ring artifact reduction. This survey covers various DL-based solutions to the five problems, potential limitations of existing methods, and future research directions.},
   eventtitle = {{{IEEE Transactions}} on {{Radiation}} and {{Plasma Medical Sciences}}}
+}
+
+@inproceedings{wangTransBTSMultimodalBrain2021,
+  title = {{{TransBTS}}: {{Multimodal Brain Tumor Segmentation Using Transformer}}},
+  shorttitle = {{{TransBTS}}},
+  booktitle = {Medical {{Image Computing}} and {{Computer Assisted Intervention}} – {{MICCAI}} 2021},
+  author = {Wang, Wenxuan and Chen, Chen and Ding, Meng and Yu, Hong and Zha, Sen and Li, Jiangyun},
+  editor = {family=Bruijne, given=Marleen, prefix=de, useprefix=true and Cattin, Philippe C. and Cotin, Stéphane and Padoy, Nicolas and Speidel, Stefanie and Zheng, Yefeng and Essert, Caroline},
+  date = {2021},
+  pages = {109--119},
+  publisher = {Springer International Publishing},
+  location = {Cham},
+  doi = {10.1007/978-3-030-87193-2_11},
+  abstract = {Transformer, which can benefit from global (long-range) information modeling using self-attention mechanisms, has been successful in natural language processing and 2D image classification recently. However, both local and global features are crucial for dense prediction tasks, especially for 3D medical image segmentation. In this paper, we for the first time exploit Transformer in 3D CNN for MRI Brain Tumor Segmentation and propose a novel network named TransBTS based on the encoder-decoder structure. To capture the local 3D context information, the encoder first utilizes 3D CNN to extract the volumetric spatial feature maps. Meanwhile, the feature maps are reformed elaborately for tokens that are fed into Transformer for global feature modeling. The decoder leverages the features embedded by Transformer and performs progressive upsampling to predict the detailed segmentation map. Extensive experimental results on both BraTS 2019 and 2020 datasets show that TransBTS achieves comparable or higher results than previous state-of-the-art 3D methods for brain tumor segmentation on 3D MRI scans. The source code is available at https://github.com/Wenxuan-1119/TransBTS.},
+  isbn = {978-3-030-87193-2},
+  language = {en},
+  keywords = {3D CNN,Brain tumor,MRI,Segmentation,Transformer}
+}
+
+@article{wangTRCTGANCTReconstruction2023,
+  title = {{{TRCT-GAN}}: {{CT}} Reconstruction from Biplane {{X-rays}} Using Transformer and Generative Adversarial Networks},
+  author = {Wang, Y. and Sun, Z.-L. and Zeng, Z. and Lam, K.-M.},
+  date = {2023},
+  journaltitle = {Digital Signal Processing: A Review Journal},
+  volume = {140},
+  doi = {10.1016/j.dsp.2023.104123},
+  abstract = {Computed tomography (CT) provides a three-dimensional view of a patient's internal organs. Compared to CT volumes, X-ray imaging can significantly reduce the patient's exposure to ionizing radiation. Moreover, X-ray images are more economical and widely applied in surgical procedures. However, X-ray images can only provide two-dimensional information. In this paper, an end-to-end GAN network, named TRCT-GAN, is proposed to reconstruct chest CT volumes from biplane X-ray images. In the GAN network, the Transformer network module is employed to enhance the feature representation of X-ray images. Moreover, a dynamic attention module is added to exploit some 2D feature maps and 3D feature maps to enhance the contextual association. The experimental results demonstrate that the proposed network can effectively produce high-quality CT reconstructions from X-ray images. © 2023 Elsevier Inc.},
+  keywords = {CT reconstruction,Deep learning,GAN,Transformer,X-ray imaging}
 }
 
 @article{wolterinkGenerativeAdversarialNetworks2017,
@@ -720,6 +1120,35 @@ titleTranslation: CT介入治疗学}
   keywords = {Attenuation,Bones,Computed tomography,convolutional neural networks,Convolutional neural networks,Databases,deep learning,Image reconstruction,metal artifacts,Metals,X-ray computed tomography (CT)}
 }
 
+@article{zhangFewViewImage2013,
+  title = {Few‐view Image Reconstruction Combining Total Variation and a High‐order Norm},
+  author = {Zhang, Yi and Zhang, Wei‐Hua and Chen, Hu and Yang, Meng‐Long and Li, Tai‐Yong and Zhou, Ji‐Liu},
+  date = {2013-09},
+  journaltitle = {International Journal of Imaging Systems and Technology},
+  shortjournal = {Int J Imaging Syst Tech},
+  volume = {23},
+  number = {3},
+  pages = {249--255},
+  issn = {0899-9457, 1098-1098},
+  doi = {10.1002/ima.22058},
+  abstract = {ABSTRACT             This work presents a novel computed tomography reconstruction method for few‐view problem based on a compound method. To overcome the disadvantages of total variation (TV) minimization method, we use a high‐order norm coupled within TV and the numerical scheme for our method is given. We use the root mean square error as a referee. The numerical experiments demonstrate that our method achieves better performance than existing reconstruction methods, including filtered back projection, expectation maximization, and TV with projection on convex sets. © 2013 Wiley Periodicals, Inc. Int J Imaging Syst Technol, 23, 249–255, 2013},
+  language = {en}
+}
+
+@article{zhangFewviewImageReconstruction2014,
+  title = {Few-View Image Reconstruction with Fractional-Order Total Variation},
+  author = {Zhang, Yi and Zhang, Weihua and Lei, Yinjie and Zhou, Jiliu},
+  date = {2014-05-01},
+  journaltitle = {Journal of the Optical Society of America A},
+  shortjournal = {J. Opt. Soc. Am. A},
+  volume = {31},
+  number = {5},
+  pages = {981},
+  issn = {1084-7529, 1520-8532},
+  doi = {10.1364/JOSAA.31.000981},
+  language = {en}
+}
+
 @article{zhangIterativeReconstructionXRay2014a,
   title = {Iterative {{Reconstruction}} for {{X-Ray Computed Tomography Using Prior-Image Induced Nonlocal Regularization}}},
   author = {Zhang, Hua and Huang, Jing and Ma, Jianhua and Bian, Zhaoying and Feng, Qianjin and Lu, Hongbing and Liang, Zhengrong and Chen, Wufan},
@@ -732,6 +1161,20 @@ titleTranslation: CT介入治疗学}
   doi = {10.1109/TBME.2013.2287244},
   abstract = {Repeated X-ray computed tomography (CT) scans are often required in several specific applications such as perfusion imaging, image-guided biopsy needle, image-guided intervention, and radiotherapy with noticeable benefits. However, the associated cumulative radiation dose significantly increases as comparison with that used in the conventional CT scan, which has raised major concerns in patients. In this study, to realize radiation dose reduction by reducing the X-ray tube current and exposure time (mAs) in repeated CT scans, we propose a prior-image induced nonlocal (PINL) regularization for statistical iterative reconstruction via the penalized weighted least-squares (PWLS) criteria, which we refer to as “PWLS-PINL”. Specifically, the PINL regularization utilizes the redundant information in the prior image and the weighted least-squares term considers a data-dependent variance estimation, aiming to improve current low-dose image quality. Subsequently, a modified iterative successive overrelaxation algorithm is adopted to optimize the associative objective function. Experimental results on both phantom and patient data show that the present PWLS-PINL method can achieve promising gains over the other existing methods in terms of the noise reduction, low-contrast object detection, and edge detail preservation.},
   eventtitle = {{{IEEE Transactions}} on {{Biomedical Engineering}}}
+}
+
+@article{zhangMetaInvNetMetaInversion2021a,
+  title = {{{MetaInv-Net}}: {{Meta Inversion Network}} for {{Sparse View CT Image Reconstruction}}},
+  shorttitle = {{{MetaInv-Net}}},
+  author = {Zhang, Haimiao and Liu, Baodong and Yu, Hengyong and Dong, Bin},
+  date = {2021-02},
+  journaltitle = {IEEE Transactions on Medical Imaging},
+  shortjournal = {IEEE Trans. Med. Imaging},
+  volume = {40},
+  number = {2},
+  pages = {621--634},
+  issn = {0278-0062, 1558-254X},
+  doi = {10.1109/TMI.2020.3033541}
 }
 
 @inproceedings{zhangTransCTDualPathTransformer2021,
